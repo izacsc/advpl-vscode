@@ -1,201 +1,125 @@
 {
-	"Protheus doc" : {
-			"prefix": "protheusdoc"
-		,	"body": [
-				"//-------------------------------------------------------------------"
-			,	"/*/{Protheus.doc} ${function}"
-			,	"${description}"
-			,	"@author  ${author}"
-			,	"@since   ${date}"
-			,	"@version ${version}"
-			,	"/*/"
-			,	"//-------------------------------------------------------------------"
-			]
-		,	"description": "Protheus doc"
-	},
-	
-	"If": {
-		"prefix": "if",
-		"body": [
-		"If ${lCond}",
-		"	$1",
-		"EndIf"
-		],
-		"description": "If Statement"
-	},
-	
-	"If Else": {
-		"prefix": "ifelse",
-		"body": [
-		"If ${lCond}",
-		"	$1",
-		"Else",
-		"	",
-		"EndIf"
-		],
-		"description": "If Else Statement"
-	},
-
-	"If ElseIf": {
-		"prefix": "ifelseif",
-		"body": [
-		"If ${lCond1}",
-		"	$1",
-		"ElseIf ${lCond2}",
-		"	",
-		"EndIf"
-		],
-		"description": "If ElseIf Statement"
-	},
-	
-	"While": {
-		"prefix": "while",
-		"body": [
-		"While (${lCond})",
-		"	$1",
-		"End"
-		],
-		"description": "While Statement"
-	},
-
-	"For": {
-		"prefix": "for",
-		"body": [
-		"For ${nX}:= 1 to Len(${aArray})",
-		"	$1",
-		"Next"
-		],
-		"description": "For Statement"
-	},
-	"Query":{
-		"prefix": "Query",
-		"body":[
-			"Local ${cQuery} := ''",
-				"${cQuery} := 'query'",
-				"${cQuery} := ChangeQuery(${cQuery})",
-				"dbUseArea(.T.,'TOPCONN', TCGenQry(,,${cQuery}),alias, .F., .T.)",
-				"While alias->(!Eof())",
-					
-					"alias->(dbSkip())",
-				"EndDo",
-				"alias->(dbCloseArea())"
-		],
-		"description": "Cria a função de Query ja efetuando a conexão com o TOP e efetuando o While"
-	},
-    "Help":{
-        "prefix": "Help",
-        "body":[
-			 
-              "HELP(' ',1,${cabecalho} ,,${descricao},2,0,,,,,, ${solucao})"
+    "If": {
+        "prefix": "if",
+        "body": [
+            "If $lCond",
+            "\t$0",
+            "EndIf"
         ],
-        "description":"Função de Help\nExemplo\nHELP(' ',1,'Help1' ,,'campo nao preenchido',2,0,,,,,, {'preencha o campo'})"
+        "description": "If Statement"
     },
-	"Static Function":{
-		"prefix": "StaticFunction",
-		"body":[
-			"/*/{Protheus.doc} ${nomeStaticFunction}",
-			"	(long_description)",
-			"	@type  Static Function",
-			"	@author ${user}",
-			"	@since ${date}",
-			"	@version ${version}",
-			"	@param ${param}, ${param_type}, ${param_descr}",
-			"	@return ${returno},${return_type}, ${return_description}",
-			"	@example",
-			"	(examples)",
-			"	@see (links_or_references)",
-			"	/*/",
-			" Static Function ${nomeStaticFunction}",
-			"Return ${returno}"
-
-
-		],
-		"description": "Declaração de uma Static Function ja com o Protheus.doc"
-		
-	},
-	"Function":{
-		"prefix": "Function",
-		"body":[
-			"/*/{Protheus.doc} ${nomeFunction}",
-			"	(long_description)",
-			"	@type  Function",
-			"	@author ${user}",
-			"	@since ${date}",
-			"	@version ${version}",
-			"	@param ${param}, ${param_type}, ${param_descr}",
-			"	@return ${returno},${return_type}, ${return_description}",
-			"	@example",
-			"	(examples)",
-			"	@see (links_or_references)",
-			"	/*/",
-			" Function ${nomeFunction}",
-			"Return ${returno}"
-
-
-		],
-		"description": "Declaração de uma Function ja com o Protheus.doc"
-	},
-	 "Strtokarr2": {
-        "prefix": "Strtokarr2",
+    "If Else": {
+        "prefix": "ifelse",
         "body": [
-            "Strtokarr2( ${cValue}, ${cToken}, ${lEmptyStr})"
+            "If $lCond",
+            "\t$0",
+            "Else",
+            "\t",
+            "EndIf"
         ],
-        "description": "Strtokarr2- Transforma uma String em um array,\n cValue := Caracter a ser separado\n cToken := Caracter a ser ultilizado na quebra \n lEmptyStr:= Se retorna elementos vazios" 					
-	 },
-	 "Year": {
-        "prefix": "Year",
-        "body": [
-            "Year( ${dData})"
-        ],
-        "description": "Year - Retorna o Ano no formato 'AAAA' da data informada"
+        "description": "If Else Statement"
     },
-	 "Type": {
-        "prefix": "Type",
+    "If ElseIf": {
+        "prefix": "ifelseif",
         "body": [
-            "Type( ${cVariavel})"
+            "If $lCond1",
+            "\t$0",
+            "ElseIf $lCond2",
+            "\t",
+            "EndIf"
         ],
-        "description": "Type() - Retorna o tipo de dado de uma expressao ou variavel."
+        "description": "If ElseIf Statement"
     },
-	 "ValType": {
-        "prefix": "ValType",
+    "While": {
+        "prefix": "while",
         "body": [
-            "ValType( ${cVariavel})"
+            "While ($lCond)",
+            "\t$0",
+            "End"
         ],
-        "description":  "Valtype() - Retorna o tipo de dado de uma expressao ou variavel."						
-	 },
-	 "ComputerName": {
-        "prefix": "ComputerName",
-        "body": [
-            "ComputerName()"
-        ],
-        "description": "ComputerName() - Retorna o nome do computador em que o SmartClient esta sendo executado"
+        "description": "While Statement"
     },
-	"ConOut": {
-        "prefix": "ConOut",
+    "For": {
+        "prefix": "for",
         "body": [
-            "ConOut( ${cText})"
+            "For $nX := 1 To Len($aArray)",
+            "\t$0",
+            "Next"
         ],
-        "description": "ConOut() - Apresenta no console, do Application Server, uma mensagem."
-	},
-	"Decode64": {
-        "prefix": "Decode64",
-        "body": [
-            "Decode64( ${cText})"
-        ],
-        "description": "Decode64() - Converte uma string de Base64 para Base ASCII"
+        "description": "For Statement"
     },
-	"Encode64": {
-        "prefix": "Encode64",
+    "Case": {
+        "prefix": "docase",
         "body": [
-            "Encode64( ${cText})"
+            "Do Case",
+            "\tCase $lCond ",
+            "\t$0",
+            "\tOtherwise",
+            "EndCase"
         ],
-        "description": "Encode64() - Converte uma string de ASCII para base64"
+        "description": "Do Case Statement"
     },
-	 "FindFunction": {
-        "prefix": "FindFunction",
+    "Query": {
+        "prefix": "query",
         "body": [
-            "FindFunction( ${cFunction})"
+            "Local $cQuery := \"\"",
+            "$cQuery := \"query\"",
+            "$cQuery := ChangeQuery($cQuery)",
+            "DbUseArea(.T., \"TOPCONN\", TCGenQry( , , $cQuery), (cAlias), .F., .T.)",
+            "While (cAlias)->(!Eof())",
+            "",
+            "\t(cAlias)->(DbSkip())",
+            "End",
+            "(cAlias)->(DbCloseArea())"
         ],
-        "description": "FindFunction() - Faz a busca de uma determinada função no rpo ou no binário"
-	 }
+        "description": "Cria a função de Query ja efetuando a conexão com o TOP e efetuando o While"
+    },
+    "Help": {
+        "prefix": "help",
+        "body": [
+            "Help(' ',1,$cabecalho ,,$descricao,2,0,,,,,, $solucao)"
+        ],
+        "description": "Função de Help\nExemplo\nHELP(' ',1,'Help1' ,,'campo nao preenchido',2,0,,,,,, {'preencha o campo'})"
+    },
+    "Protheusdoc": {
+        "prefix": "protheusdoc",
+        "body": [
+            "/*/{Protheus.doc} $FunctionName",
+            "(description)",
+            "",
+            "@author $user",
+            "@since  $date",
+            "/*/"
+        ],
+        "description": "Protheus doc"
+    },
+    "Function": {
+        "prefix": "Function",
+        "body": [
+            "/*/{Protheus.doc} $FunctionName",
+            "(description)",
+            "",
+            "@author $user",
+            "@since  $date",
+            "/*/",
+            "${1|Static Function,User Function,Function|} $FunctionName()",
+            "\t$0",
+            "Return $return"
+        ],
+        "description": "Declaração de uma Function já com  Protheus.doc"
+    },
+    "@param": {
+        "prefix": "@param",
+        "body": [
+            "@param  ${1:paramvar}, ${2|array,block,codeblock,character,date,logical,numeric,object|}, ${3:description}"
+        ],
+        "description": "Descricao de um parâmetro."
+    },
+    "@return": {
+        "prefix": "@return",
+        "body": [
+            "@return  ${1:returnvar}, ${2|array,block,codeblock,character,date,logical,numeric,object|}, ${3:description}"
+        ],
+        "description": "Descricao do retorno."
+    }
 }

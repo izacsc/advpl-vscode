@@ -1,0 +1,4551 @@
+{
+    "AnsiToOEM": {
+        "prefix": "AnsiToOEM",
+        "body": [
+            "AnsiToOEM(${1:cStringAnsi})"
+        ],
+        "description": "Converte uma string do formato ANSI Text (formato Microsoft Windows) para OEM/MS-DOS"
+    },
+    "ASort": {
+        "prefix": "ASort",
+        "body": [
+            "ASort(${1:aVetor}, ${2:[nInicio]}, ${3:[nCont]}, ${4:[bOrdem]})"
+        ],
+        "description": "Coloca em ordem tudo ou parte de um Array."
+    },
+    "ChkBmpRlt": {
+        "prefix": "ChkBmpRlt",
+        "body": [
+            "ChkBmpRlt(${1:cFile})"
+        ],
+        "description": "Verifica se o arquivo de imagem existe."
+    },
+    "GetMv": {
+        "prefix": "GetMv",
+        "body": [
+            "GetMv(${1:cMv_par}, ${2:[lConsulta]}, ${3:[xDefault]})"
+        ],
+        "description": "Verifica se um parâmetro existe no Dicionário de Parâmetros (SX6) ou retorna seu conteúdo dependendo dos parâmetros informados à função. "
+    },
+    "IntIncProc": {
+        "prefix": "IntIncProc",
+        "body": [
+            "IntIncProc(${1:[cMsg]})"
+        ],
+        "description": "Incrementa e apresenta um texto para uma régua de progresso."
+    },
+    "OEMToAnsi": {
+        "prefix": "OEMToAnsi",
+        "body": [
+            "OEMToAnsi(${1:[cStringOEM]})"
+        ],
+        "description": "Converte uma string do formato OEM/MS-DOS Text para ANSI Text (formato do Microsoft Windows)."
+    },
+    "QOut": {
+        "prefix": "QOut",
+        "body": [
+            "QOut(${1:[cText]})"
+        ],
+        "description": "Apresenta uma mensagem no console do Application Server."
+    },
+    "Randomize": {
+        "prefix": "Randomize",
+        "body": [
+            "Randomize(${1:nMinimo}, ${2:nMaximo})"
+        ],
+        "description": "Gera um número inteiro aleatório entre a faixa, inferior e superior, recebida através dos parâmetros (nMinimo e nMaximo)."
+    },
+    "SysRefresh": {
+        "prefix": "SysRefresh",
+        "body": [
+            "SysRefresh(${1:[lRet]})"
+        ],
+        "description": "Atualiza todas as mensagens pendentes da conexão."
+    },
+    "Type": {
+        "prefix": "Type",
+        "body": [
+            "Type(${1:cExpr})"
+        ],
+        "description": "Retorna o tipo de dado de uma expressão ou variável."
+    },
+    "AAdd": {
+        "prefix": "AAdd",
+        "body": [
+            "AAdd(${1:aDest}, ${2:xExpr})"
+        ],
+        "description": "Inclui um elemento no Array e ao elemento, do Array recém-criado, é atribuido o valor especificado por parâmetro."
+    },
+    "Abs": {
+        "prefix": "Abs",
+        "body": [
+            "Abs(${1:nExp})"
+        ],
+        "description": "Retorna o valor absoluto (independente do sinal) de uma expressão numérica."
+    },
+    "AClone": {
+        "prefix": "AClone",
+        "body": [
+            "AClone(${1:aSource})"
+        ],
+        "description": "Duplica um Array (estrutura e elementos)."
+    },
+    "ACopy": {
+        "prefix": "ACopy",
+        "body": [
+            "ACopy(${1:aOrigem}, ${2:aDestino}, ${3:[nInicio]}, ${4:[nCont]}, ${5:[nPosDestino]})"
+        ],
+        "description": "Copia elementos de um Array para outro."
+    },
+    "ACos": {
+        "prefix": "ACos",
+        "body": [
+            "ACos(${1:nCos})"
+        ],
+        "description": "Calcula o valor em radianos do arco cosseno de um valor que representa o cosseno de um ângulo."
+    },
+    "AddCSSRule": {
+        "prefix": "AddCSSRule",
+        "body": [
+            "AddCSSRule(${1:cObjeto}, ${2:cRegraCSS})"
+        ],
+        "description": "Cria uma lista de regras CSS - CAscading Style Sheets para serem aplicadas aos objetos no momento de sua criação."
+    },
+    "AddFontAlias": {
+        "prefix": "AddFontAlias",
+        "body": [
+            "AddFontAlias(${1:cOrigem}, ${2:cDestino})"
+        ],
+        "description": "Cria uma tabela de conversão de fontes com origem e destino. Assim, se a fonte origem for utilizada em um objeto, o sistema automaticamente assumirá a fonte destino."
+    },
+    "ADel": {
+        "prefix": "ADel",
+        "body": [
+            "ADel(${1:aSource}, ${2:nPos})"
+        ],
+        "description": "Elimina um elemento do Array e 'arrasta' os demais para trás tornando nulo o último elemento."
+    },
+    "ADir": {
+        "prefix": "ADir",
+        "body": [
+            "ADir(${1:[cEspecArq]}, @${2:[aNomesArq]}, @${3:[aTamanhos]}, @${4:[aDatas]}, @${5:[aHoras]}, ;",
+            "@${6:[aAtributos]}, ${7:[lChangeCase]})"
+        ],
+        "description": "Preenche uma série de Arrays com informações de arquivos e diretórios (nomes de arquivos, tamanhos, datas, horas e atributos)."
+    },
+    "ADUserValid": {
+        "prefix": "ADUserValid",
+        "body": [
+            "ADUserValid(${1:cDomainName}, ${2:cUserName}, ${3:cPassword})"
+        ],
+        "description": "Faz a autenticação de uma conta de usuário de um domínio baseado no Active Directory do Microsoft Windows."
+    },
+    "AEval": {
+        "prefix": "AEval",
+        "body": [
+            "AEval(${1:aArray}, ${2:bBlock}, ${3:[nStart]}, ${4:[nCount]})"
+        ],
+        "description": "Executa um bloco de código para cada elemento de um Array."
+    },
+    "aFields": {
+        "prefix": "aFields",
+        "body": [
+            "aFields(@${1:[aFields]}, @${2:[aTypes]}, @${3:[aWidths]}, @${4:[aDecimals]})"
+        ],
+        "description": "Preenche Arrays com a estrutura da tabela atualmente em uso."
+    },
+    "AFill": {
+        "prefix": "AFill",
+        "body": [
+            "AFill(${1:aDest}, ${2:xValue}, ${3:[nStart]}, ${4:[nCount]})"
+        ],
+        "description": "Preenche um Array com um único valor de qualquer tipo de dados (inclusive Array´s, blocos de código ou nulo) na faixa especificada."
+    },
+    "AIns": {
+        "prefix": "AIns",
+        "body": [
+            "AIns(${1:aDest}, ${2:nPos})"
+        ],
+        "description": "Inclui um elemento nulo na posição definida e 'empurra' os demais para frente descartando o último elemento."
+    },
+    "Alias": {
+        "prefix": "Alias",
+        "body": [
+            "Alias(${1:[nWorkArea]})"
+        ],
+        "description": "Retorna o alias de uma área de trabalho especificada."
+    },
+    "AllwaysFalse": {
+        "prefix": "AllwaysFalse",
+        "body": [
+            "AllwaysFalse()"
+        ],
+        "description": "Função de compatibilidade que sempre retornará um valor falso (.F.)."
+    },
+    "AllwaysTrue": {
+        "prefix": "AllwaysTrue",
+        "body": [
+            "AllwaysTrue()"
+        ],
+        "description": "Função de compatibilidade que sempre retornará um valor verdadeiro (.T.)."
+    },
+    "AppBringToFront": {
+        "prefix": "AppBringToFront",
+        "body": [
+            "AppBringToFront()"
+        ],
+        "description": "Permite que um diálogo em execução, no Smart Client, fique em primeiro plano, ou seja, acima de todas as outras aplicações que estão em execução na estação de trabalho."
+    },
+    "Array": {
+        "prefix": "Array",
+        "body": [
+            "Array(${1:nElementos1 }, ${2:[xElemento2]}, ${3:[xElemento3]}, ${4:[xElemento4]}, ${5:[xElemento5]}, ;",
+            "${6:[xElemento6]}, ${7:[xElemento7]}, ${8:[xElemento8]}, ${9:[xElemento9]}, ${10:[xElemento10]}, ;",
+            "${11:[xElemento11]}, ${12:[xElemento12]}, ${13:[xElemento13]}, ${14:[xElemento14]}, ${15:[xElemento15]}, ;",
+            "${16:[xElemento16]})"
+        ],
+        "description": "Cria um array não inicializado com a quantidade especificada de elementos."
+    },
+    "Asc": {
+        "prefix": "Asc",
+        "body": [
+            "Asc(${1:cString})"
+        ],
+        "description": "Converte um caractere para seu valor ASCII mais à esquerda em uma string."
+    },
+    "AScan": {
+        "prefix": "AScan",
+        "body": [
+            "AScan(${1:aDest}, ${2:xExpr}, ${3:[nStart]}, ${4:[nCount]})"
+        ],
+        "description": "Percorre um array procurando por um valor especificado. Pode ser especificado um valor a ser buscado, ou pode ser informada uma condição de busca através de um bloco de código."
+    },
+    "AScanX": {
+        "prefix": "AScanX",
+        "body": [
+            "AScanX(${1:aDest}, ${2:bSearch}, ${3:[nStart]}, ${4:[nCount]})"
+        ],
+        "description": "Realiza a leitura do array à procura de um valor específico. Funciona da mesma forma que a função AScan, porém quando utilizado um bloco de código para realizar a busca, o mesmo é chamado com um segundo parâmetro, informando qual é o elemento do array em questão que está sendo verificado na chamada corrente do bloco de código."
+    },
+    "ASin": {
+        "prefix": "ASin",
+        "body": [
+            "ASin(${1:nSin})"
+        ],
+        "description": "Retorna o valor em radianos do arco seno de um ângulo a partir do valor que representa o seno desse ângulo."
+    },
+    "ASize": {
+        "prefix": "ASize",
+        "body": [
+            "ASize(${1:aDestino}, ${2:nTamanho})"
+        ],
+        "description": "Aumenta ou diminui um array a um tamanho especificado"
+    },
+    "At": {
+        "prefix": "At",
+        "body": [
+            "At(${1:cPesquisa}, ${2:cDestino}, ${3:nStart})"
+        ],
+        "description": "Retorna a posição da primeira ocorrência de uma substring em uma string. Para isso, a função pesquisa a string destino a partir da direita"
+    },
+    "ATail": {
+        "prefix": "ATail",
+        "body": [
+            "ATail(${1:aArray})"
+        ],
+        "description": "Retorna o último elemento do array"
+    },
+    "ATan": {
+        "prefix": "ATan",
+        "body": [
+            "ATan(${1:nTan})"
+        ],
+        "description": "Calcula o valor em radianos do arco tangente de um valor que representa a tangente de um ângulo."
+    },
+    "Atn2": {
+        "prefix": "Atn2",
+        "body": [
+            "Atn2(${1:nSin}, ${2:nCos})"
+        ],
+        "description": "Calcula o valor do ângulo, em radianos, de um valor que representa o seno e de um valor que representa o cosseno."
+    },
+    "AToHM": {
+        "prefix": "AToHM",
+        "body": [
+            "AToHM(${1:aMatriz}, ${2:[nColuna_1]}, ${3:[nTrim_1]}, ${4:[nColuna_N]}, ${5:[nTrim_N]})"
+        ],
+        "description": "Converte uma matriz de dados (Array) em um tHashMap, podendo combinar as colunas para a chave de busca."
+    },
+    "Bin2D": {
+        "prefix": "Bin2D",
+        "body": [
+            "Bin2D(${1:cString})"
+        ],
+        "description": "Converte um caractere de 64 bits sinalizado para um numérico de ponto flutuante."
+    },
+    "Bin2F": {
+        "prefix": "Bin2F",
+        "body": [
+            "Bin2F(${1:cString})"
+        ],
+        "description": "Converte um caractere de 32 bits sinalizado para um numérico de ponto flutuante."
+    },
+    "Bin2I": {
+        "prefix": "Bin2I",
+        "body": [
+            "Bin2I(${1:cString})"
+        ],
+        "description": "Converte um caractere de 16 bits sinalizado para um numérico."
+    },
+    "Bin2L": {
+        "prefix": "Bin2L",
+        "body": [
+            "Bin2L(${1:cString})"
+        ],
+        "description": "Converte um caractere de 32 bits sinalizado para um numérico."
+    },
+    "Bin2Str": {
+        "prefix": "Bin2Str",
+        "body": [
+            "Bin2Str(${1:cString})"
+        ],
+        "description": "Converte uma string com caracteres para uma string com o valor binário de cada caractere."
+    },
+    "Bin2W": {
+        "prefix": "Bin2W",
+        "body": [
+            "Bin2W(${1:cString})"
+        ],
+        "description": "Converte um caractere de 16 bits não sinalizado para um numérico."
+    },
+    "BitOn": {
+        "prefix": "BitOn",
+        "body": [
+            "BitOn(${1:cStr}, ${2:nStart}, ${3:nTest}, ${4:nLength})"
+        ],
+        "description": "Verifica se possui os primeiros bits de uma string estão com 0."
+    },
+    "BmpToJpg": {
+        "prefix": "BmpToJpg",
+        "body": [
+            "BmpToJpg(${1:cFileOld}, ${2:cFileNew})"
+        ],
+        "description": "Converte uma imagem do tipo BMP (Bitmap) para JPG (Joint Photographic Group)."
+    },
+    "Bof": {
+        "prefix": "Bof",
+        "body": [
+            "Bof()"
+        ],
+        "description": "Informa se está no inicio do Arquivo/Tabela."
+    },
+    "CalcFieldSize": {
+        "prefix": "CalcFieldSize",
+        "body": [
+            "CalcFieldSize(${1:[cTipo]}, ${2:[nTaman]}, ${3:[nDecimal]}, ${4:[cPicture]}, ${5:[cTitulo]}, ;",
+            "${6:[oFont]})"
+        ],
+        "description": "Calcula o tamanho em pixel da área ocupada pelo objeto TSay/TGet na área de edição."
+    },
+    "CDow": {
+        "prefix": "CDow",
+        "body": [
+            "CDow(${1:dExp})"
+        ],
+        "description": "Retorna o dia da semana de uma determinada data."
+    },
+    "Ceiling": {
+        "prefix": "Ceiling",
+        "body": [
+            "Ceiling(${1:nValor})"
+        ],
+        "description": "Calcula o arrendodamento (para cima) do valor do ponto flutuante."
+    },
+    "cGetFile": {
+        "prefix": "cGetFile",
+        "body": [
+            "cGetFile(${1:[cMascara]}, ${2:[cTitulo]}, ${3:[nMascpadrao]}, ${4:[cDirinicial]}, ${5:[lSalvar]}, ;",
+            "${6:[nOpcoes]}, ${7:[lArvore]}, ${8:[lKeepCase]})"
+        ],
+        "description": "Apresenta uma janela com os diretórios disponíveis, na estação e no servidor,  e retorna o nome do item."
+    },
+    "ChkRpoChg": {
+        "prefix": "ChkRpoChg",
+        "body": [
+            "ChkRpoChg()"
+        ],
+        "description": "Verifica se houve alteração da configuração de SourcePath (RPO Ativo) após o início do processo atual."
+    },
+    "CHMOD": {
+        "prefix": "CHMOD",
+        "body": [
+            "CHMOD(${1:cFileName}, ${2:nFileMode}, ${3:[uParam3]}, ${4:[lChangeCase]})"
+        ],
+        "description": "Altera as permissões de um arquivo."
+    },
+    "Chr": {
+        "prefix": "Chr",
+        "body": [
+            "Chr(${1:nCodigo})"
+        ],
+        "description": "Converte um código ASCII para caractere."
+    },
+    "ClassDataArr": {
+        "prefix": "ClassDataArr",
+        "body": [
+            "ClassDataArr(${1:oObj}, ${2:[lParent]})"
+        ],
+        "description": "Retorna um array multidimensional com todas as informações das propriedades da instância da classe contida no objeto informado como parâmetro"
+    },
+    "ClearGlbValue": {
+        "prefix": "ClearGlbValue",
+        "body": [
+            "ClearGlbValue(${1:cGlbName}, ${2:[nTimeOut]})"
+        ],
+        "description": "Limpa um conteúdo armazenado em uma variável global."
+    },
+    "ClearVarSetGet": {
+        "prefix": "ClearVarSetGet",
+        "body": [
+            "ClearVarSetGet(${1:cNameVar})"
+        ],
+        "description": "Retiro o bloco de código atribuído ao uso da variável, de forma que quando a variável for usada, o bloco não será mais executado."
+    },
+    "CMonth": {
+        "prefix": "CMonth",
+        "body": [
+            "CMonth(${1:dData})"
+        ],
+        "description": "Retorna o mês, como string, a partir de uma data passada como parâmetro."
+    },
+    "ColorToRGB": {
+        "prefix": "ColorToRGB",
+        "body": [
+            "ColorToRGB(${1:nColor})"
+        ],
+        "description": "A partir do valor numérico que representa uma cor, retorna uma lista dos números que representam o RGB."
+    },
+    "Compress": {
+        "prefix": "Compress",
+        "body": [
+            "Compress(@${1:cBufferOut}, @${2:nLenghtOut}, ${3:cBufferIn}, ${4:nLenghtIn})"
+        ],
+        "description": "Compacta um buffer recebido através de algoritmo proprietário."
+    },
+    "ComputerName": {
+        "prefix": "ComputerName",
+        "body": [
+            "ComputerName()"
+        ],
+        "description": "Retorna o nome da máquina (hostname) onde o SmartClient está sendo executado."
+    },
+    "Conout": {
+        "prefix": "Conout",
+        "body": [
+            "Conout(${1:[ cMensagem]})"
+        ],
+        "description": "Apresenta no console, do Application Server, uma mensagem."
+    },
+    "ContType": {
+        "prefix": "ContType",
+        "body": [
+            "ContType(${1:oObj})"
+        ],
+        "description": "Retorna um array com o tipo da variável. Diferente do ValType, retorna o tipo original da variável. No caso de ADVPL puro irá sempre retornar o ValType (contetType - Variant), porém se for chamada com uma variável que veio do 4GL (interop) retorna o tipo que ela foi criada."
+    },
+    "CopytoClipBoard": {
+        "prefix": "CopytoClipBoard",
+        "body": [
+            "CopytoClipBoard(${1:cTexto})"
+        ],
+        "description": "Coloca um texto na área de transferência da estação."
+    },
+    "Cos": {
+        "prefix": "Cos",
+        "body": [
+            "Cos(${1:nAngle})"
+        ],
+        "description": "Calcula o valor do cosseno de um ângulo (em radianos)."
+    },
+    "CpyS2T": {
+        "prefix": "CpyS2T",
+        "body": [
+            "CpyS2T(${1:cFile}, ${2:cFolder}, ${3:[lCompress]}, ${4:[lChangeCase]})"
+        ],
+        "description": "Copia um arquivo do ambiente do servidor, a partir do rootpath, para um diretório na máquina onde está sendo executado o SmartClient."
+    },
+    "CpyS2TW": {
+        "prefix": "CpyS2TW",
+        "body": [
+            "CpyS2TW(${1:cOrigem}, ${2:[lSendToBrowser]})"
+        ],
+        "description": "Copia um arquivo do servidor para o client (SmartClient HTML)."
+    },
+    "CpyT2S": {
+        "prefix": "CpyT2S",
+        "body": [
+            "CpyT2S(${1:cFile}, ${2:cFolder}, ${3:[lCompress]}, ${4:[lChangeCase]})"
+        ],
+        "description": "Copia um arquivo da máquina onde está sendo executado o SmartClient, para um diretório no ambiente do servidor, a partir do rootpath."
+    },
+    "CreateSession": {
+        "prefix": "CreateSession",
+        "body": [
+            "CreateSession(${1:cThead}, ${2:oWorkSpace}, ${3:cFunction}, ${4:[cArg1]}, ${5:[cArgN]})"
+        ],
+        "description": "Executa dois programas, escritos na linguagem AdvPL, ao mesmo tempo."
+    },
+    "CSSDictAdd": {
+        "prefix": "CSSDictAdd",
+        "body": [
+            "CSSDictAdd(${1:cObj}, ${2:cCSS})"
+        ],
+        "description": "Define o CSS (Cascading Style Sheet) padrão para um determinado objeto."
+    },
+    "CtoD": {
+        "prefix": "CtoD",
+        "body": [
+            "CtoD(${1:cData})"
+        ],
+        "description": "Converte uma string formatada para o tipo data."
+    },
+    "ctreeDelIdxs": {
+        "prefix": "ctreeDelIdxs",
+        "body": [
+            "ctreeDelIdxs()"
+        ],
+        "description": "Exclui os índices da tabela corrente, com exceção do índice interno, apenas se o mesmo for c-tree e estiver exclusivo."
+    },
+    "ctreeDelInt": {
+        "prefix": "ctreeDelInt",
+        "body": [
+            "ctreeDelInt(${1:cNome})"
+        ],
+        "description": "Exclui o índice interno da tabela c-tree, mesmo estando fechada."
+    },
+    "CTUpdateIntName": {
+        "prefix": "CTUpdateIntName",
+        "body": [
+            "CTUpdateIntName()"
+        ],
+        "description": "Atualiza o nome do índice interno de controle de numero de registro da estrutura da Tabela Ctree."
+    },
+    "CurDir": {
+        "prefix": "CurDir",
+        "body": [
+            "CurDir(${1:[cNovoPath]})"
+        ],
+        "description": "Exibe o diretório atual servidor. Esse diretório é relativo ao RootPath, definido no arquivo de configuração (appserver.ini), do Application Server, para identificar o diretório inicial de execução do sistema."
+    },
+    "CursorArrow": {
+        "prefix": "CursorArrow",
+        "body": [
+            "CursorArrow()"
+        ],
+        "description": "Define o ponteiro do mouse como seta."
+    },
+    "CursorWait": {
+        "prefix": "CursorWait",
+        "body": [
+            "CursorWait()"
+        ],
+        "description": "Define o ponteiro do mouse como ampulheta."
+    },
+    "cValToChar": {
+        "prefix": "cValToChar",
+        "body": [
+            "cValToChar(${1:xParametro})"
+        ],
+        "description": "Converte uma informação do tipo caractere, data, lógico ou numérico para string, sem adição de espaços na informação."
+    },
+    "d2bin": {
+        "prefix": "d2bin",
+        "body": [
+            "d2bin(${1:nExp01})"
+        ],
+        "description": "d2bin"
+    },
+    "date": {
+        "prefix": "date",
+        "body": [
+            "date(${1:cExp01})"
+        ],
+        "description": "date"
+    },
+    "day": {
+        "prefix": "day",
+        "body": [
+            "day(${1:DR})"
+        ],
+        "description": "day"
+    },
+    "dbappend": {
+        "prefix": "dbappend",
+        "body": [
+            "dbappend(${1:[lExp01]})"
+        ],
+        "description": "dbappend"
+    },
+    "dbchangeAlias": {
+        "prefix": "dbchangeAlias",
+        "body": [
+            "dbchangeAlias(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "dbchangeAlias"
+    },
+    "dbclearallfilter": {
+        "prefix": "dbclearallfilter",
+        "body": [
+            "dbclearallfilter()"
+        ],
+        "description": "dbclearallfilter"
+    },
+    "dbclearfilter": {
+        "prefix": "dbclearfilter",
+        "body": [
+            "dbclearfilter()"
+        ],
+        "description": "dbclearfilter"
+    },
+    "dbclearindex": {
+        "prefix": "dbclearindex",
+        "body": [
+            "dbclearindex()"
+        ],
+        "description": "dbclearindex"
+    },
+    "dbcloseall": {
+        "prefix": "dbcloseall",
+        "body": [
+            "dbcloseall()"
+        ],
+        "description": "dbcloseall"
+    },
+    "dbclosearea": {
+        "prefix": "dbclosearea",
+        "body": [
+            "dbclosearea()"
+        ],
+        "description": "dbclosearea"
+    },
+    "dbcommit": {
+        "prefix": "dbcommit",
+        "body": [
+            "dbcommit()"
+        ],
+        "description": "dbcommit"
+    },
+    "dbcommitall": {
+        "prefix": "dbcommitall",
+        "body": [
+            "dbcommitall()"
+        ],
+        "description": "dbcommitall"
+    },
+    "dbcreate": {
+        "prefix": "dbcreate",
+        "body": [
+            "dbcreate(${1:cExp01}, ${2:aExp02}, ${3:[cExp03]})"
+        ],
+        "description": "dbcreate"
+    },
+    "dbcreateindex": {
+        "prefix": "dbcreateindex",
+        "body": [
+            "dbcreateindex(${1:cExp01}, ${2:cExp02}, ${3:[bExp03]}, ${4:[lExp04]})"
+        ],
+        "description": "dbcreateindex"
+    },
+    "dbdelete": {
+        "prefix": "dbdelete",
+        "body": [
+            "dbdelete()"
+        ],
+        "description": "dbdelete"
+    },
+    "dbeval": {
+        "prefix": "dbeval",
+        "body": [
+            "dbeval(${1:bExp01}, ${2:[bExp02]}, ${3:[bExp03]}, ${4:[nExp04]}, ${5:[nExp05]}, ;",
+            "${6:[lExp06]})"
+        ],
+        "description": "dbeval"
+    },
+    "dbf": {
+        "prefix": "dbf",
+        "body": [
+            "dbf()"
+        ],
+        "description": "dbf"
+    },
+    "dbfieldinfo": {
+        "prefix": "dbfieldinfo",
+        "body": [
+            "dbfieldinfo(${1:nExp01}, ${2:nExp02})"
+        ],
+        "description": "dbfieldinfo"
+    },
+    "dbfilter": {
+        "prefix": "dbfilter",
+        "body": [
+            "dbfilter()"
+        ],
+        "description": "dbfilter"
+    },
+    "dbfiltercb": {
+        "prefix": "dbfiltercb",
+        "body": [
+            "dbfiltercb()"
+        ],
+        "description": "dbfiltercb"
+    },
+    "DBGetActFld": {
+        "prefix": "DBGetActFld",
+        "body": [
+            "DBGetActFld()"
+        ],
+        "description": "DBGetActFld"
+    },
+    "dbgobottom": {
+        "prefix": "dbgobottom",
+        "body": [
+            "dbgobottom()"
+        ],
+        "description": "dbgobottom"
+    },
+    "dbgoto": {
+        "prefix": "dbgoto",
+        "body": [
+            "dbgoto(${1:nExp01})"
+        ],
+        "description": "dbgoto"
+    },
+    "dbgotop": {
+        "prefix": "dbgotop",
+        "body": [
+            "dbgotop()"
+        ],
+        "description": "dbgotop"
+    },
+    "dbinfo": {
+        "prefix": "dbinfo",
+        "body": [
+            "dbinfo(${1:nExp01})"
+        ],
+        "description": "dbinfo"
+    },
+    "DBInInsert": {
+        "prefix": "DBInInsert",
+        "body": [
+            "DBInInsert()"
+        ],
+        "description": "DBInInsert"
+    },
+    "dbl2dt": {
+        "prefix": "dbl2dt",
+        "body": [
+            "dbl2dt(${1:nExp01})"
+        ],
+        "description": "dbl2dt"
+    },
+    "DBNickIndexKey": {
+        "prefix": "DBNickIndexKey",
+        "body": [
+            "DBNickIndexKey(${1:cExp01})"
+        ],
+        "description": "DBNickIndexKey"
+    },
+    "dborderinfo": {
+        "prefix": "dborderinfo",
+        "body": [
+            "dborderinfo(${1:nExp01}, ${2:[cExp02]}, ${3:[xExp03]})"
+        ],
+        "description": "dborderinfo"
+    },
+    "DBOrderNickName": {
+        "prefix": "DBOrderNickName",
+        "body": [
+            "DBOrderNickName(${1:cExp01})"
+        ],
+        "description": "DBOrderNickName"
+    },
+    "dbrecall": {
+        "prefix": "dbrecall",
+        "body": [
+            "dbrecall()"
+        ],
+        "description": "dbrecall"
+    },
+    "dbrecordinfo": {
+        "prefix": "dbrecordinfo",
+        "body": [
+            "dbrecordinfo(${1:nExp01}, ${2:[nExp02]}, ${3:[xExp03]})"
+        ],
+        "description": "dbrecordinfo"
+    },
+    "dbreindex": {
+        "prefix": "dbreindex",
+        "body": [
+            "dbreindex()"
+        ],
+        "description": "dbreindex"
+    },
+    "dbrlock": {
+        "prefix": "dbrlock",
+        "body": [
+            "dbrlock(${1:[nExp01]})"
+        ],
+        "description": "dbrlock"
+    },
+    "dbrlocklist": {
+        "prefix": "dbrlocklist",
+        "body": [
+            "dbrlocklist()"
+        ],
+        "description": "dbrlocklist"
+    },
+    "dbrunlock": {
+        "prefix": "dbrunlock",
+        "body": [
+            "dbrunlock(${1:[nExp01]})"
+        ],
+        "description": "dbrunlock"
+    },
+    "dbseek": {
+        "prefix": "dbseek",
+        "body": [
+            "dbseek(${1:xExp01}, ${2:[lExp02]}, ${3:[lExp03]})"
+        ],
+        "description": "dbseek"
+    },
+    "DBSetActFld": {
+        "prefix": "DBSetActFld",
+        "body": [
+            "DBSetActFld(${1:cExp01}, ${2:lExp02})"
+        ],
+        "description": "DBSetActFld"
+    },
+    "dbsetdriver": {
+        "prefix": "dbsetdriver",
+        "body": [
+            "dbsetdriver(${1:[cExp01]})"
+        ],
+        "description": "dbsetdriver"
+    },
+    "dbsetfilter": {
+        "prefix": "dbsetfilter",
+        "body": [
+            "dbsetfilter(${1:bExp01}, ${2:cExp02})"
+        ],
+        "description": "dbsetfilter"
+    },
+    "dbsetindex": {
+        "prefix": "dbsetindex",
+        "body": [
+            "dbsetindex(${1:cExp01})"
+        ],
+        "description": "dbsetindex"
+    },
+    "DBSetNickName": {
+        "prefix": "DBSetNickName",
+        "body": [
+            "DBSetNickName(${1:cExp01}, ${2:[cExp02]})"
+        ],
+        "description": "DBSetNickName"
+    },
+    "dbsetorder": {
+        "prefix": "dbsetorder",
+        "body": [
+            "dbsetorder(${1:[nExp01]})"
+        ],
+        "description": "dbsetorder"
+    },
+    "dbskip": {
+        "prefix": "dbskip",
+        "body": [
+            "dbskip(${1:[nExp01]})"
+        ],
+        "description": "dbskip"
+    },
+    "dbsqlexec": {
+        "prefix": "dbsqlexec",
+        "body": [
+            "dbsqlexec(${1:cExp01}, ${2:cExp02}, ${3:cExp03})"
+        ],
+        "description": "dbsqlexec"
+    },
+    "dbstruct": {
+        "prefix": "dbstruct",
+        "body": [
+            "dbstruct()"
+        ],
+        "description": "dbstruct"
+    },
+    "dbtblcopy": {
+        "prefix": "dbtblcopy",
+        "body": [
+            "dbtblcopy(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "dbtblcopy"
+    },
+    "dbunlock": {
+        "prefix": "dbunlock",
+        "body": [
+            "dbunlock()"
+        ],
+        "description": "dbunlock"
+    },
+    "dbunlockall": {
+        "prefix": "dbunlockall",
+        "body": [
+            "dbunlockall()"
+        ],
+        "description": "dbunlockall"
+    },
+    "dbusearea": {
+        "prefix": "dbusearea",
+        "body": [
+            "dbusearea(${1:[lExp01]}, ${2:[cExp02]}, ${3:cExp03}, ${4:[cExp04]}, ${5:[lExp05]}, ;",
+            "${6:[lExp06]})"
+        ],
+        "description": "dbusearea"
+    },
+    "Decode64": {
+        "prefix": "Decode64",
+        "body": [
+            "Decode64(${1:cExp01})"
+        ],
+        "description": "Decode64"
+    },
+    "DecodeUtf16": {
+        "prefix": "DecodeUtf16",
+        "body": [
+            "DecodeUtf16(${1:cExp01}, ${2:[nExp02]})"
+        ],
+        "description": "DecodeUtf16"
+    },
+    "DecodeUtf8": {
+        "prefix": "DecodeUtf8",
+        "body": [
+            "DecodeUtf8(${1:cExp01})"
+        ],
+        "description": "DecodeUtf8"
+    },
+    "DEC_ADD": {
+        "prefix": "DEC_ADD",
+        "body": [
+            "DEC_ADD(${1:FR}, ${2:FR})"
+        ],
+        "description": "DEC_ADD"
+    },
+    "DEC_CREATE": {
+        "prefix": "DEC_CREATE",
+        "body": [
+            "DEC_CREATE(${1:xExp01}, ${2:nExp02}, ${3:nExp03})"
+        ],
+        "description": "DEC_CREATE"
+    },
+    "DEC_DIV": {
+        "prefix": "DEC_DIV",
+        "body": [
+            "DEC_DIV(${1:FR}, ${2:FR})"
+        ],
+        "description": "DEC_DIV"
+    },
+    "DEC_MOD": {
+        "prefix": "DEC_MOD",
+        "body": [
+            "DEC_MOD(${1:FR}, ${2:FR})"
+        ],
+        "description": "DEC_MOD"
+    },
+    "DEC_MUL": {
+        "prefix": "DEC_MUL",
+        "body": [
+            "DEC_MUL(${1:FR}, ${2:FR})"
+        ],
+        "description": "DEC_MUL"
+    },
+    "DEC_POW": {
+        "prefix": "DEC_POW",
+        "body": [
+            "DEC_POW(${1:FR}, ${2:FR})"
+        ],
+        "description": "DEC_POW"
+    },
+    "DEC_RESCALE": {
+        "prefix": "DEC_RESCALE",
+        "body": [
+            "DEC_RESCALE(${1:FR}, ${2:nExp02}, ${3:[nExp03]})"
+        ],
+        "description": "DEC_RESCALE"
+    },
+    "DEC_RESIZE": {
+        "prefix": "DEC_RESIZE",
+        "body": [
+            "DEC_RESIZE(${1:FR}, ${2:nExp02}, ${3:nExp03}, ${4:[nExp04]})"
+        ],
+        "description": "DEC_RESIZE"
+    },
+    "DEC_ROUND": {
+        "prefix": "DEC_ROUND",
+        "body": [
+            "DEC_ROUND(${1:FR}, ${2:nExp02})"
+        ],
+        "description": "DEC_ROUND"
+    },
+    "DEC_SUB": {
+        "prefix": "DEC_SUB",
+        "body": [
+            "DEC_SUB(${1:FR}, ${2:FR})"
+        ],
+        "description": "DEC_SUB"
+    },
+    "DelClassIntf": {
+        "prefix": "DelClassIntf",
+        "body": [
+            "DelClassIntf()"
+        ],
+        "description": "DelClassIntf"
+    },
+    "deleted": {
+        "prefix": "deleted",
+        "body": [
+            "deleted()"
+        ],
+        "description": "deleted"
+    },
+    "DeleteKeyIni": {
+        "prefix": "DeleteKeyIni",
+        "body": [
+            "DeleteKeyIni(${1:cExp01}, ${2:cExp02}, ${3:cExp03})"
+        ],
+        "description": "DeleteKeyIni"
+    },
+    "DeleteSectionIni": {
+        "prefix": "DeleteSectionIni",
+        "body": [
+            "DeleteSectionIni(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "DeleteSectionIni"
+    },
+    "descend": {
+        "prefix": "descend",
+        "body": [
+            "descend(${1:cExp01})"
+        ],
+        "description": "descend"
+    },
+    "DevOut": {
+        "prefix": "DevOut",
+        "body": [
+            "DevOut(${1:cExp01})"
+        ],
+        "description": "DevOut"
+    },
+    "DevOutPict": {
+        "prefix": "DevOutPict",
+        "body": [
+            "DevOutPict(${1:xExp01}, ${2:cExp02})"
+        ],
+        "description": "DevOutPict"
+    },
+    "DevPos": {
+        "prefix": "DevPos",
+        "body": [
+            "DevPos(${1:nExp01}, ${2:nExp02})"
+        ],
+        "description": "DevPos"
+    },
+    "directory": {
+        "prefix": "directory",
+        "body": [
+            "directory(${1:cExp01}, ${2:[cExp02]}, ${3:[nExp03]}, ${4:[lExp04]}, ${5:[nExp05]})"
+        ],
+        "description": "directory"
+    },
+    "dirremove": {
+        "prefix": "dirremove",
+        "body": [
+            "dirremove(${1:cExp01}, ${2:[nExp02]}, ${3:[lExp03]})"
+        ],
+        "description": "dirremove"
+    },
+    "diskspace": {
+        "prefix": "diskspace",
+        "body": [
+            "diskspace(${1:[nExp01]})"
+        ],
+        "description": "diskspace"
+    },
+    "dow": {
+        "prefix": "dow",
+        "body": [
+            "dow(${1:DR})"
+        ],
+        "description": "dow"
+    },
+    "dt2dbl": {
+        "prefix": "dt2dbl",
+        "body": [
+            "dt2dbl(${1:cExp01})"
+        ],
+        "description": "dt2dbl"
+    },
+    "dtoc": {
+        "prefix": "dtoc",
+        "body": [
+            "dtoc(${1:DR}, ${2:[cExp02]})"
+        ],
+        "description": "dtoc"
+    },
+    "dtos": {
+        "prefix": "dtos",
+        "body": [
+            "dtos(${1:DR})"
+        ],
+        "description": "dtos"
+    },
+    "elaptime": {
+        "prefix": "elaptime",
+        "body": [
+            "elaptime(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "elaptime"
+    },
+    "embaralha": {
+        "prefix": "embaralha",
+        "body": [
+            "embaralha(${1:cExp01}, ${2:nExp02})"
+        ],
+        "description": "embaralha"
+    },
+    "empty": {
+        "prefix": "empty",
+        "body": [
+            "empty(${1:xExp01})"
+        ],
+        "description": "empty"
+    },
+    "Encode64": {
+        "prefix": "Encode64",
+        "body": [
+            "Encode64(${1:cExp01})"
+        ],
+        "description": "Encode64"
+    },
+    "EncodeUtf16": {
+        "prefix": "EncodeUtf16",
+        "body": [
+            "EncodeUtf16(${1:cExp01}, ${2:[nExp02]})"
+        ],
+        "description": "EncodeUtf16"
+    },
+    "EncodeUtf8": {
+        "prefix": "EncodeUtf8",
+        "body": [
+            "EncodeUtf8(${1:cExp01})"
+        ],
+        "description": "EncodeUtf8"
+    },
+    "EncryptRSA": {
+        "prefix": "EncryptRSA",
+        "body": [
+            "EncryptRSA(${1:cExp01}, ${2:cExp02}, ${3:[lExp03]})"
+        ],
+        "description": "EncryptRSA"
+    },
+    "eof": {
+        "prefix": "eof",
+        "body": [
+            "eof()"
+        ],
+        "description": "eof"
+    },
+    "ErrorBlock": {
+        "prefix": "ErrorBlock",
+        "body": [
+            "ErrorBlock(${1:[xExp01]})"
+        ],
+        "description": "ErrorBlock"
+    },
+    "eval": {
+        "prefix": "eval",
+        "body": [
+            "eval(${1:aExp01}, ${2:bExp02}, ${3:[nExp03]}, ${4:[nExp04]})"
+        ],
+        "description": "eval"
+    },
+    "EVPDigest": {
+        "prefix": "EVPDigest",
+        "body": [
+            "EVPDigest(${1:cExp01}, ${2:nExp02})"
+        ],
+        "description": "EVPDigest"
+    },
+    "EVPPrivSign": {
+        "prefix": "EVPPrivSign",
+        "body": [
+            "EVPPrivSign(${1:cExp01}, ${2:cExp02}, ${3:nExp03}, ${4:cExp04}, ${5:cExp05})"
+        ],
+        "description": "EVPPrivSign"
+    },
+    "EVPPrivVery": {
+        "prefix": "EVPPrivVery",
+        "body": [
+            "EVPPrivVery(${1:cExp01}, ${2:cExp02}, ${3:nExp03}, ${4:cExp04}, ${5:cExp05}, ;",
+            "${6:cExp06})"
+        ],
+        "description": "EVPPrivVery"
+    },
+    "ExecInClient": {
+        "prefix": "ExecInClient",
+        "body": [
+            "ExecInClient(${1:nExp01}, ${2:[aExp02]})"
+        ],
+        "description": "ExecInClient"
+    },
+    "ExecInDllClose": {
+        "prefix": "ExecInDllClose",
+        "body": [
+            "ExecInDllClose(${1:nExp01})"
+        ],
+        "description": "ExecInDllClose"
+    },
+    "ExecInDllOpen": {
+        "prefix": "ExecInDllOpen",
+        "body": [
+            "ExecInDllOpen(${1:cExp01})"
+        ],
+        "description": "ExecInDllOpen"
+    },
+    "ExecInDllRun": {
+        "prefix": "ExecInDllRun",
+        "body": [
+            "ExecInDllRun(${1:nExp01}, ${2:nExp02}, ${3:cExp03})"
+        ],
+        "description": "ExecInDllRun"
+    },
+    "ExeDllRun2": {
+        "prefix": "ExeDllRun2",
+        "body": [
+            "ExeDllRun2(${1:nExp01}, ${2:nExp02}, ${3:cExp03})"
+        ],
+        "description": "ExeDllRun2"
+    },
+    "ExeDllRun3": {
+        "prefix": "ExeDllRun3",
+        "body": [
+            "ExeDllRun3(${1:nExp01}, ${2:nExp02}, ${3:cExp03})"
+        ],
+        "description": "ExeDllRun3"
+    },
+    "ExistDir": {
+        "prefix": "ExistDir",
+        "body": [
+            "ExistDir(${1:cExp01}, ${2:[nExp02]}, ${3:[lExp03]})"
+        ],
+        "description": "ExistDir"
+    },
+    "exp": {
+        "prefix": "exp",
+        "body": [
+            "exp(${1:cExp01})"
+        ],
+        "description": "exp"
+    },
+    "ExUserException": {
+        "prefix": "ExUserException",
+        "body": [
+            "ExUserException(${1:cExp01})"
+        ],
+        "description": "ExUserException"
+    },
+    "f2Bin": {
+        "prefix": "f2Bin",
+        "body": [
+            "f2Bin(${1:nExp01})"
+        ],
+        "description": "f2Bin"
+    },
+    "fclose": {
+        "prefix": "fclose",
+        "body": [
+            "fclose(${1:[xExp01]})"
+        ],
+        "description": "fclose"
+    },
+    "fcount": {
+        "prefix": "fcount",
+        "body": [
+            "fcount()"
+        ],
+        "description": "fcount"
+    },
+    "fcreate": {
+        "prefix": "fcreate",
+        "body": [
+            "fcreate(${1:cExp01}, ${2:[nExp02]}, ${3:[nExp03]}, ${4:[lExp04]})"
+        ],
+        "description": "fcreate"
+    },
+    "FechaRel": {
+        "prefix": "FechaRel",
+        "body": [
+            "FechaRel()"
+        ],
+        "description": "FechaRel"
+    },
+    "ferase": {
+        "prefix": "ferase",
+        "body": [
+            "ferase(${1:cExp01}, ${2:[nExp02]}, ${3:[lExp03]})"
+        ],
+        "description": "ferase"
+    },
+    "ferror": {
+        "prefix": "ferror",
+        "body": [
+            "ferror()"
+        ],
+        "description": "ferror"
+    },
+    "field": {
+        "prefix": "field",
+        "body": [
+            "field(${1:[aExp01]}, ${2:[aExp02]}, ${3:[aExp03]}, ${4:[aExp04]})"
+        ],
+        "description": "field"
+    },
+    "fieldblock": {
+        "prefix": "fieldblock",
+        "body": [
+            "fieldblock(${1:cExp01})"
+        ],
+        "description": "fieldblock"
+    },
+    "fieldget": {
+        "prefix": "fieldget",
+        "body": [
+            "fieldget(${1:nExp01})"
+        ],
+        "description": "fieldget"
+    },
+    "fieldname": {
+        "prefix": "fieldname",
+        "body": [
+            "fieldname(${1:nExp01})"
+        ],
+        "description": "fieldname"
+    },
+    "fieldpos": {
+        "prefix": "fieldpos",
+        "body": [
+            "fieldpos(${1:cExp01})"
+        ],
+        "description": "fieldpos"
+    },
+    "fieldput": {
+        "prefix": "fieldput",
+        "body": [
+            "fieldput(${1:nExp01}, ${2:xExp02})"
+        ],
+        "description": "fieldput"
+    },
+    "fieldwblock": {
+        "prefix": "fieldwblock",
+        "body": [
+            "fieldwblock(${1:cExp01}, ${2:nExp02})"
+        ],
+        "description": "fieldwblock"
+    },
+    "file": {
+        "prefix": "file",
+        "body": [
+            "file(${1:cExp01}, ${2:[nExp02]}, ${3:[lExp03]})"
+        ],
+        "description": "file"
+    },
+    "FindFunction": {
+        "prefix": "FindFunction",
+        "body": [
+            "FindFunction(${1:cExp01})"
+        ],
+        "description": "FindFunction"
+    },
+    "flock": {
+        "prefix": "flock",
+        "body": [
+            "flock()"
+        ],
+        "description": "flock"
+    },
+    "fopen": {
+        "prefix": "fopen",
+        "body": [
+            "fopen(${1:cExp01}, ${2:[nExp02]}, ${3:[nExp03]}, ${4:[lExp04]})"
+        ],
+        "description": "fopen"
+    },
+    "found": {
+        "prefix": "found",
+        "body": [
+            "found()"
+        ],
+        "description": "found"
+    },
+    "fread": {
+        "prefix": "fread",
+        "body": [
+            "fread(${1:nExp01}, ${2:cExp02}, ${3:nExp03})"
+        ],
+        "description": "fread"
+    },
+    "freadstr": {
+        "prefix": "freadstr",
+        "body": [
+            "freadstr(${1:nExp01}, ${2:nExp02})"
+        ],
+        "description": "freadstr"
+    },
+    "FreeObj": {
+        "prefix": "FreeObj",
+        "body": [
+            "FreeObj(${1:xExp01})"
+        ],
+        "description": "FreeObj"
+    },
+    "frename": {
+        "prefix": "frename",
+        "body": [
+            "frename(${1:cExp01}, ${2:cExp02}, ${3:[nExp03]}, ${4:[lExp04]})"
+        ],
+        "description": "frename"
+    },
+    "frenameex": {
+        "prefix": "frenameex",
+        "body": [
+            "frenameex(${1:cExp01}, ${2:cExp02}, ${3:[nExp03]})"
+        ],
+        "description": "frenameex"
+    },
+    "fseek": {
+        "prefix": "fseek",
+        "body": [
+            "fseek(${1:nExp01}, ${2:nExp02}, ${3:[nExp03]})"
+        ],
+        "description": "fseek"
+    },
+    "ft_feof": {
+        "prefix": "ft_feof",
+        "body": [
+            "ft_feof()"
+        ],
+        "description": "ft_feof"
+    },
+    "ft_fgoto": {
+        "prefix": "ft_fgoto",
+        "body": [
+            "ft_fgoto(${1:nExp01})"
+        ],
+        "description": "ft_fgoto"
+    },
+    "ft_fgotop": {
+        "prefix": "ft_fgotop",
+        "body": [
+            "ft_fgotop()"
+        ],
+        "description": "ft_fgotop"
+    },
+    "ft_flastrec": {
+        "prefix": "ft_flastrec",
+        "body": [
+            "ft_flastrec()"
+        ],
+        "description": "ft_flastrec"
+    },
+    "ft_freadln": {
+        "prefix": "ft_freadln",
+        "body": [
+            "ft_freadln()"
+        ],
+        "description": "ft_freadln"
+    },
+    "ft_frecno": {
+        "prefix": "ft_frecno",
+        "body": [
+            "ft_frecno()"
+        ],
+        "description": "ft_frecno"
+    },
+    "ft_fskip": {
+        "prefix": "ft_fskip",
+        "body": [
+            "ft_fskip(${1:[nExp01]})"
+        ],
+        "description": "ft_fskip"
+    },
+    "ft_fuse": {
+        "prefix": "ft_fuse",
+        "body": [
+            "ft_fuse(${1:[cExp01]})"
+        ],
+        "description": "ft_fuse"
+    },
+    "fwrite": {
+        "prefix": "fwrite",
+        "body": [
+            "fwrite(${1:nExp01}, ${2:cExp02}, ${3:[nExp03]})"
+        ],
+        "description": "fwrite"
+    },
+    "getapoinfo": {
+        "prefix": "getapoinfo",
+        "body": [
+            "getapoinfo(${1:cExp01})"
+        ],
+        "description": "getapoinfo"
+    },
+    "GetApoRes": {
+        "prefix": "GetApoRes",
+        "body": [
+            "GetApoRes(${1:cExp01})"
+        ],
+        "description": "GetApoRes"
+    },
+    "GetAuthArgs": {
+        "prefix": "GetAuthArgs",
+        "body": [
+            "GetAuthArgs()"
+        ],
+        "description": "GetAuthArgs"
+    },
+    "GetBuild": {
+        "prefix": "GetBuild",
+        "body": [
+            "GetBuild(${1:[lExp01]})"
+        ],
+        "description": "GetBuild"
+    },
+    "GetCBSource": {
+        "prefix": "GetCBSource",
+        "body": [
+            "GetCBSource(${1:bExp01})"
+        ],
+        "description": "GetCBSource"
+    },
+    "GetClassName": {
+        "prefix": "GetClassName",
+        "body": [
+            "GetClassName(${1:oExp01})"
+        ],
+        "description": "GetClassName"
+    },
+    "GetClientDir": {
+        "prefix": "GetClientDir",
+        "body": [
+            "GetClientDir()"
+        ],
+        "description": "GetClientDir"
+    },
+    "GETCLIENTIP": {
+        "prefix": "GETCLIENTIP",
+        "body": [
+            "GETCLIENTIP()"
+        ],
+        "description": "GETCLIENTIP"
+    },
+    "GetComputerName": {
+        "prefix": "GetComputerName",
+        "body": [
+            "GetComputerName()"
+        ],
+        "description": "GetComputerName"
+    },
+    "GetConnStatus": {
+        "prefix": "GetConnStatus",
+        "body": [
+            "GetConnStatus()"
+        ],
+        "description": "GetConnStatus"
+    },
+    "GetCredential": {
+        "prefix": "GetCredential",
+        "body": [
+            "GetCredential()"
+        ],
+        "description": "GetCredential"
+    },
+    "GetDBExtension": {
+        "prefix": "GetDBExtension",
+        "body": [
+            "GetDBExtension()"
+        ],
+        "description": "GetDBExtension"
+    },
+    "GetDtoDate": {
+        "prefix": "GetDtoDate",
+        "body": [
+            "GetDtoDate(${1:cExp01})"
+        ],
+        "description": "GetDtoDate"
+    },
+    "GetDtoVal": {
+        "prefix": "GetDtoVal",
+        "body": [
+            "GetDtoVal(${1:cExp01})"
+        ],
+        "description": "GetDtoVal"
+    },
+    "getenv": {
+        "prefix": "getenv",
+        "body": [
+            "getenv(${1:cExp01})"
+        ],
+        "description": "getenv"
+    },
+    "GetEnvHost": {
+        "prefix": "GetEnvHost",
+        "body": [
+            "GetEnvHost()"
+        ],
+        "description": "GetEnvHost"
+    },
+    "GetEnvServer": {
+        "prefix": "GetEnvServer",
+        "body": [
+            "GetEnvServer()"
+        ],
+        "description": "GetEnvServer"
+    },
+    "GetFocus": {
+        "prefix": "GetFocus",
+        "body": [
+            "GetFocus()"
+        ],
+        "description": "GetFocus"
+    },
+    "GetFontList": {
+        "prefix": "GetFontList",
+        "body": [
+            "GetFontList()"
+        ],
+        "description": "GetFontList"
+    },
+    "GetFontPixWidths": {
+        "prefix": "GetFontPixWidths",
+        "body": [
+            "GetFontPixWidths(${1:cExp01}, ${2:nExp02}, ${3:[lExp03]}, ${4:[lExp04]}, ${5:[lExp05]})"
+        ],
+        "description": "GetFontPixWidths"
+    },
+    "GetFuncArray": {
+        "prefix": "GetFuncArray",
+        "body": [
+            "GetFuncArray(${1:cExp01}, ${2:[aExp02]}, ${3:[aExp03]}, ${4:[aExp04]}, ${5:[aExp05]}, ;",
+            "${6:[aExp06]})"
+        ],
+        "description": "GetFuncArray"
+    },
+    "GetGlbValue": {
+        "prefix": "GetGlbValue",
+        "body": [
+            "GetGlbValue(${1:cExp01})"
+        ],
+        "description": "GetGlbValue"
+    },
+    "GetGlbVars": {
+        "prefix": "GetGlbVars",
+        "body": [
+            "GetGlbVars(${1:cExp01}, ${2:[xExp02]}, ${3:[xExp03]}, ${4:[xExp04]}, ${5:[xExp05]}, ;",
+            "${6:[xExp06]}, ${7:[xExp07]}, ${8:[xExp08]}, ${9:[xExp09]}, ${10:[xExp10]}, ;",
+            "${11:[xExp11]}, ${12:[xExp12]}, ${13:[xExp13]}, ${14:[xExp14]}, ${15:[xExp15]}, ;",
+            "${16:[xExp16]}, ${17:[xExp17]}, ${18:[xExp18]}, ${19:[xExp19]}, ${20:[xExp20]}, ;",
+            "${21:[xExp21]}, ${22:[xExp22]}, ${23:[xExp23]}, ${24:[xExp24]}, ${25:[xExp25]}, ;",
+            "${26:[xExp26]}, ${27:[xExp27]}, ${28:[xExp28]}, ${29:[xExp29]}, ${30:[xExp30]}, ;",
+            "${31:[xExp31]}, ${32:[xExp32]}, ${33:[xExp33]}, ${34:[xExp34]}, ${35:[xExp35]}, ;",
+            "${36:[xExp36]}, ${37:[xExp37]}, ${38:[xExp38]}, ${39:[xExp39]}, ${40:[xExp40]}, ;",
+            "${41:[xExp41]})"
+        ],
+        "description": "GetGlbVars"
+    },
+    "GetHardwareId": {
+        "prefix": "GetHardwareId",
+        "body": [
+            "GetHardwareId()"
+        ],
+        "description": "GetHardwareId"
+    },
+    "GetHeightFont": {
+        "prefix": "GetHeightFont",
+        "body": [
+            "GetHeightFont(${1:cExp01}, ${2:nExp02}, ${3:[lExp03]}, ${4:[lExp04]}, ${5:[lExp05]})"
+        ],
+        "description": "GetHeightFont"
+    },
+    "GetImpInf": {
+        "prefix": "GetImpInf",
+        "body": [
+            "GetImpInf(${1:cExp01}, ${2:[nExp02]})"
+        ],
+        "description": "GetImpInf"
+    },
+    "GetImpWindows": {
+        "prefix": "GetImpWindows",
+        "body": [
+            "GetImpWindows(${1:lExp01})"
+        ],
+        "description": "GetImpWindows"
+    },
+    "GetIniSessions": {
+        "prefix": "GetIniSessions",
+        "body": [
+            "GetIniSessions(${1:cExp01}, ${2:[nExp02]})"
+        ],
+        "description": "GetIniSessions"
+    },
+    "GetMailObj": {
+        "prefix": "GetMailObj",
+        "body": [
+            "GetMailObj(${1:cExp01})"
+        ],
+        "description": "GetMailObj"
+    },
+    "GetParentTree": {
+        "prefix": "GetParentTree",
+        "body": [
+            "GetParentTree(${1:xExp01})"
+        ],
+        "description": "GetParentTree"
+    },
+    "GetPortActive": {
+        "prefix": "GetPortActive",
+        "body": [
+            "GetPortActive(${1:lExp01})"
+        ],
+        "description": "GetPortActive"
+    },
+    "GetProcInfoArray": {
+        "prefix": "GetProcInfoArray",
+        "body": [
+            "GetProcInfoArray()"
+        ],
+        "description": "GetProcInfoArray"
+    },
+    "GetProfInt": {
+        "prefix": "GetProfInt",
+        "body": [
+            "GetProfInt(${1:cExp01}, ${2:cExp02}, ${3:nExp03})"
+        ],
+        "description": "GetProfInt"
+    },
+    "GetProfString": {
+        "prefix": "GetProfString",
+        "body": [
+            "GetProfString(${1:cExp01}, ${2:cExp02}, ${3:cExp03}, ${4:[lExp04]})"
+        ],
+        "description": "GetProfString"
+    },
+    "GetPvProfileInt": {
+        "prefix": "GetPvProfileInt",
+        "body": [
+            "GetPvProfileInt(${1:cExp01}, ${2:cExp02}, ${3:nExp03}, ${4:cExp04}, ${5:[nExp05]}, ;",
+            "${6:[nExp06]})"
+        ],
+        "description": "GetPvProfileInt"
+    },
+    "GetPvProfString": {
+        "prefix": "GetPvProfString",
+        "body": [
+            "GetPvProfString(${1:cExp01}, ${2:cExp02}, ${3:cExp03}, ${4:cExp04}, ${5:[nExp05]}, ;",
+            "${6:[nExp06]})"
+        ],
+        "description": "GetPvProfString"
+    },
+    "GetRemoteIniName": {
+        "prefix": "GetRemoteIniName",
+        "body": [
+            "GetRemoteIniName()"
+        ],
+        "description": "GetRemoteIniName"
+    },
+    "GetRemoteType": {
+        "prefix": "GetRemoteType",
+        "body": [
+            "GetRemoteType(${1:[cExp01]})"
+        ],
+        "description": "GetRemoteType"
+    },
+    "GetResArray": {
+        "prefix": "GetResArray",
+        "body": [
+            "GetResArray(${1:cExp01})"
+        ],
+        "description": "GetResArray"
+    },
+    "GetRmtDate": {
+        "prefix": "GetRmtDate",
+        "body": [
+            "GetRmtDate()"
+        ],
+        "description": "GetRmtDate"
+    },
+    "GetRmtInfo": {
+        "prefix": "GetRmtInfo",
+        "body": [
+            "GetRmtInfo()"
+        ],
+        "description": "GetRmtInfo"
+    },
+    "GetRmtTime": {
+        "prefix": "GetRmtTime",
+        "body": [
+            "GetRmtTime()"
+        ],
+        "description": "GetRmtTime"
+    },
+    "GetRpoLog": {
+        "prefix": "GetRpoLog",
+        "body": [
+            "GetRpoLog()"
+        ],
+        "description": "GetRpoLog"
+    },
+    "getSAMLID": {
+        "prefix": "getSAMLID",
+        "body": [
+            "getSAMLID(${1:cExp01}, ${2:nExp02}, ${3:[cExp03]})"
+        ],
+        "description": "getSAMLID"
+    },
+    "getSAMLSvc": {
+        "prefix": "getSAMLSvc",
+        "body": [
+            "getSAMLSvc()"
+        ],
+        "description": "getSAMLSvc"
+    },
+    "GetScreenRes": {
+        "prefix": "GetScreenRes",
+        "body": [
+            "GetScreenRes()"
+        ],
+        "description": "GetScreenRes"
+    },
+    "GetSenhAp": {
+        "prefix": "GetSenhAp",
+        "body": [
+            "GetSenhAp(${1:cExp01}, ${2:cExp02}, ${3:cExp03})"
+        ],
+        "description": "GetSenhAp"
+    },
+    "GetServerIP": {
+        "prefix": "GetServerIP",
+        "body": [
+            "GetServerIP()"
+        ],
+        "description": "GetServerIP"
+    },
+    "GetServerType": {
+        "prefix": "GetServerType",
+        "body": [
+            "GetServerType()"
+        ],
+        "description": "GetServerType"
+    },
+    "GetSrcArray": {
+        "prefix": "GetSrcArray",
+        "body": [
+            "GetSrcArray(${1:cExp01})"
+        ],
+        "description": "GetSrcArray"
+    },
+    "GetSrvGlbInfo": {
+        "prefix": "GetSrvGlbInfo",
+        "body": [
+            "GetSrvGlbInfo()"
+        ],
+        "description": "GetSrvGlbInfo"
+    },
+    "GetSrvInfo": {
+        "prefix": "GetSrvInfo",
+        "body": [
+            "GetSrvInfo()"
+        ],
+        "description": "GetSrvInfo"
+    },
+    "GetSrvIniName": {
+        "prefix": "GetSrvIniName",
+        "body": [
+            "GetSrvIniName()"
+        ],
+        "description": "GetSrvIniName"
+    },
+    "GetSrvMemInfo": {
+        "prefix": "GetSrvMemInfo",
+        "body": [
+            "GetSrvMemInfo()"
+        ],
+        "description": "GetSrvMemInfo"
+    },
+    "GetSrvOSInfo": {
+        "prefix": "GetSrvOSInfo",
+        "body": [
+            "GetSrvOSInfo()"
+        ],
+        "description": "GetSrvOSInfo"
+    },
+    "GetSrvProfString": {
+        "prefix": "GetSrvProfString",
+        "body": [
+            "GetSrvProfString(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "GetSrvProfString"
+    },
+    "GetSrvVersion": {
+        "prefix": "GetSrvVersion",
+        "body": [
+            "GetSrvVersion()"
+        ],
+        "description": "GetSrvVersion"
+    },
+    "GetSslObj": {
+        "prefix": "GetSslObj",
+        "body": [
+            "GetSslObj(${1:cExp01})"
+        ],
+        "description": "GetSslObj"
+    },
+    "GetTempPath": {
+        "prefix": "GetTempPath",
+        "body": [
+            "GetTempPath(${1:[lExp01]})"
+        ],
+        "description": "GetTempPath"
+    },
+    "GetUserFromSID": {
+        "prefix": "GetUserFromSID",
+        "body": [
+            "GetUserFromSID(${1:cExp01}, ${2:xExp02}, ${3:xExp03})"
+        ],
+        "description": "GetUserFromSID"
+    },
+    "GetUserInfoArray": {
+        "prefix": "GetUserInfoArray",
+        "body": [
+            "GetUserInfoArray(${1:[lExp01]})"
+        ],
+        "description": "GetUserInfoArray"
+    },
+    "GetVarSize": {
+        "prefix": "GetVarSize",
+        "body": [
+            "GetVarSize(${1:[xExp01]})"
+        ],
+        "description": "GetVarSize"
+    },
+    "GetWebJob": {
+        "prefix": "GetWebJob",
+        "body": [
+            "GetWebJob()"
+        ],
+        "description": "GetWebJob"
+    },
+    "GetWndDefault": {
+        "prefix": "GetWndDefault",
+        "body": [
+            "GetWndDefault()"
+        ],
+        "description": "GetWndDefault"
+    },
+    "GlbLock": {
+        "prefix": "GlbLock",
+        "body": [
+            "GlbLock()"
+        ],
+        "description": "GlbLock"
+    },
+    "GlbNmLock": {
+        "prefix": "GlbNmLock",
+        "body": [
+            "GlbNmLock(${1:cExp01})"
+        ],
+        "description": "GlbNmLock"
+    },
+    "GlbNmUnlock": {
+        "prefix": "GlbNmUnlock",
+        "body": [
+            "GlbNmUnlock()"
+        ],
+        "description": "GlbNmUnlock"
+    },
+    "GlbUnlock": {
+        "prefix": "GlbUnlock",
+        "body": [
+            "GlbUnlock()"
+        ],
+        "description": "GlbUnlock"
+    },
+    "gzCompress": {
+        "prefix": "gzCompress",
+        "body": [
+            "gzCompress(${1:cExp01}, ${2:[cExp02]}, ${3:[lExp03]})"
+        ],
+        "description": "gzCompress"
+    },
+    "gzdecomp": {
+        "prefix": "gzdecomp",
+        "body": [
+            "gzdecomp(${1:cExp01}, ${2:cExp02}, ${3:[lExp03]})"
+        ],
+        "description": "gzdecomp"
+    },
+    "GzStrComp": {
+        "prefix": "GzStrComp",
+        "body": [
+            "GzStrComp(${1:cExp01}, ${2:cExp02}, ${3:nExp03})"
+        ],
+        "description": "GzStrComp"
+    },
+    "GzStrDecomp": {
+        "prefix": "GzStrDecomp",
+        "body": [
+            "GzStrDecomp(${1:cExp01}, ${2:nExp02}, ${3:cExp03})"
+        ],
+        "description": "GzStrDecomp"
+    },
+    "header": {
+        "prefix": "header",
+        "body": [
+            "header()"
+        ],
+        "description": "header"
+    },
+    "HMAC": {
+        "prefix": "HMAC",
+        "body": [
+            "HMAC(${1:cExp01}, ${2:cExp02}, ${3:nExp03}, ${4:[nExp04]})"
+        ],
+        "description": "HMAC"
+    },
+    "hmadd": {
+        "prefix": "hmadd",
+        "body": [
+            "hmadd(${1:oExp01}, ${2:aExp02}, ${3:[nExp03]}, ${4:[nExp04]}, ${5:[nExp05]}, ;",
+            "${6:[nExp06]}, ${7:[nExp07]}, ${8:[nExp08]}, ${9:[nExp09]}, ${10:[nExp10]}, ;",
+            "${11:[nExp11]}, ${12:[nExp12]}, ${13:[nExp13]}, ${14:[nExp14]}, ${15:[nExp15]}, ;",
+            "${16:[nExp16]}, ${17:[nExp17]}, ${18:[nExp18]})"
+        ],
+        "description": "hmadd"
+    },
+    "hmclean": {
+        "prefix": "hmclean",
+        "body": [
+            "hmclean(${1:oExp01})"
+        ],
+        "description": "hmclean"
+    },
+    "hmdel": {
+        "prefix": "hmdel",
+        "body": [
+            "hmdel(${1:oExp01}, ${2:xExp02})"
+        ],
+        "description": "hmdel"
+    },
+    "hmget": {
+        "prefix": "hmget",
+        "body": [
+            "hmget(${1:oExp01}, ${2:xExp02}, ${3:xExp03})"
+        ],
+        "description": "hmget"
+    },
+    "hmgetn": {
+        "prefix": "hmgetn",
+        "body": [
+            "hmgetn(${1:oExp01}, ${2:nExp02}, ${3:nExp03})"
+        ],
+        "description": "hmgetn"
+    },
+    "hmkey": {
+        "prefix": "hmkey",
+        "body": [
+            "hmkey(${1:aExp01}, ${2:[nExp02]}, ${3:[nExp03]}, ${4:[nExp04]}, ${5:[nExp05]}, ;",
+            "${6:[nExp06]}, ${7:[nExp07]}, ${8:[nExp08]}, ${9:[nExp09]}, ${10:[nExp10]}, ;",
+            "${11:[nExp11]}, ${12:[nExp12]}, ${13:[nExp13]}, ${14:[nExp14]}, ${15:[nExp15]}, ;",
+            "${16:[nExp16]}, ${17:[nExp17]})"
+        ],
+        "description": "hmkey"
+    },
+    "hmlist": {
+        "prefix": "hmlist",
+        "body": [
+            "hmlist(${1:oExp01}, ${2:xExp02}, ${3:[nExp03]})"
+        ],
+        "description": "hmlist"
+    },
+    "hmnew": {
+        "prefix": "hmnew",
+        "body": [
+            "hmnew()"
+        ],
+        "description": "hmnew"
+    },
+    "hmset": {
+        "prefix": "hmset",
+        "body": [
+            "hmset(${1:oExp01}, ${2:xExp02}, ${3:xExp03})"
+        ],
+        "description": "hmset"
+    },
+    "hmsetn": {
+        "prefix": "hmsetn",
+        "body": [
+            "hmsetn(${1:oExp01}, ${2:nExp02}, ${3:nExp03})"
+        ],
+        "description": "hmsetn"
+    },
+    "HSMExponent": {
+        "prefix": "HSMExponent",
+        "body": [
+            "HSMExponent(${1:cExp01}, ${2:[cExp02]}, ${3:[lExp03]})"
+        ],
+        "description": "HSMExponent"
+    },
+    "HSMFinalize": {
+        "prefix": "HSMFinalize",
+        "body": [
+            "HSMFinalize(${1:[lExp01]})"
+        ],
+        "description": "HSMFinalize"
+    },
+    "HSMGetCertFile": {
+        "prefix": "HSMGetCertFile",
+        "body": [
+            "HSMGetCertFile(${1:cExp01}, ${2:cExp02}, ${3:[cExp03]}, ${4:[lExp04]})"
+        ],
+        "description": "HSMGetCertFile"
+    },
+    "HSMInitialize": {
+        "prefix": "HSMInitialize",
+        "body": [
+            "HSMInitialize(${1:[cExp01]}, ${2:[lExp02]})"
+        ],
+        "description": "HSMInitialize"
+    },
+    "HSMModulus": {
+        "prefix": "HSMModulus",
+        "body": [
+            "HSMModulus(${1:cExp01}, ${2:[cExp02]}, ${3:[lExp03]})"
+        ],
+        "description": "HSMModulus"
+    },
+    "HSMObjList": {
+        "prefix": "HSMObjList",
+        "body": [
+            "HSMObjList(${1:nExp01}, ${2:cExp02}, ${3:[lExp03]})"
+        ],
+        "description": "HSMObjList"
+    },
+    "HSMPrivSign": {
+        "prefix": "HSMPrivSign",
+        "body": [
+            "HSMPrivSign(${1:cExp01}, ${2:cExp02}, ${3:nExp03}, ${4:cExp04}, ${5:[cExp05]}, ;",
+            "${6:[lExp06]})"
+        ],
+        "description": "HSMPrivSign"
+    },
+    "HSMPrivVery": {
+        "prefix": "HSMPrivVery",
+        "body": [
+            "HSMPrivVery(${1:cExp01}, ${2:cExp02}, ${3:nExp03}, ${4:cExp04}, ${5:cExp05}, ;",
+            "${6:[lExp06]})"
+        ],
+        "description": "HSMPrivVery"
+    },
+    "HSMSlotList": {
+        "prefix": "HSMSlotList",
+        "body": [
+            "HSMSlotList(${1:[lExp01]})"
+        ],
+        "description": "HSMSlotList"
+    },
+    "HttpCache": {
+        "prefix": "HttpCache",
+        "body": [
+            "HttpCache(${1:cExp01})"
+        ],
+        "description": "HttpCache"
+    },
+    "HttpCGet": {
+        "prefix": "HttpCGet",
+        "body": [
+            "HttpCGet(${1:cExp01}, ${2:[cExp02]}, ${3:[nExp03]}, ${4:[aExp04]}, ${5:[cExp05]})"
+        ],
+        "description": "HttpCGet"
+    },
+    "httpCountSession": {
+        "prefix": "httpCountSession",
+        "body": [
+            "httpCountSession()"
+        ],
+        "description": "httpCountSession"
+    },
+    "HttpCPost": {
+        "prefix": "HttpCPost",
+        "body": [
+            "HttpCPost(${1:cExp01}, ${2:[cExp02]}, ${3:[nExp03]}, ${4:[aExp04]}, ${5:[cExp05]})"
+        ],
+        "description": "HttpCPost"
+    },
+    "HttpCTDisp": {
+        "prefix": "HttpCTDisp",
+        "body": [
+            "HttpCTDisp(${1:[cExp01]})"
+        ],
+        "description": "HttpCTDisp"
+    },
+    "HttpCTLen": {
+        "prefix": "HttpCTLen",
+        "body": [
+            "HttpCTLen(${1:[nExp01]})"
+        ],
+        "description": "HttpCTLen"
+    },
+    "HttpCTType": {
+        "prefix": "HttpCTType",
+        "body": [
+            "HttpCTType(${1:[cExp01]})"
+        ],
+        "description": "HttpCTType"
+    },
+    "HttpExitProc": {
+        "prefix": "HttpExitProc",
+        "body": [
+            "HttpExitProc(${1:cExp01})"
+        ],
+        "description": "HttpExitProc"
+    },
+    "httpFreeSession": {
+        "prefix": "httpFreeSession",
+        "body": [
+            "httpFreeSession()"
+        ],
+        "description": "httpFreeSession"
+    },
+    "HttpGet": {
+        "prefix": "HttpGet",
+        "body": [
+            "HttpGet(${1:cExp01}, ${2:[cExp02]}, ${3:[nExp03]}, ${4:[aExp04]}, ${5:[cExp05]})"
+        ],
+        "description": "HttpGet"
+    },
+    "HttpGetPart": {
+        "prefix": "HttpGetPart",
+        "body": [
+            "HttpGetPart()"
+        ],
+        "description": "HttpGetPart"
+    },
+    "HttpGetStatus": {
+        "prefix": "HttpGetStatus",
+        "body": [
+            "HttpGetStatus(${1:xExp01}, ${2:[lExp02]})"
+        ],
+        "description": "HttpGetStatus"
+    },
+    "HttpIsAPW": {
+        "prefix": "HttpIsAPW",
+        "body": [
+            "HttpIsAPW()"
+        ],
+        "description": "HttpIsAPW"
+    },
+    "HttpIsConnected": {
+        "prefix": "HttpIsConnected",
+        "body": [
+            "HttpIsConnected()"
+        ],
+        "description": "HttpIsConnected"
+    },
+    "httpLeaveSession": {
+        "prefix": "httpLeaveSession",
+        "body": [
+            "httpLeaveSession()"
+        ],
+        "description": "httpLeaveSession"
+    },
+    "HttpLogonUser": {
+        "prefix": "HttpLogonUser",
+        "body": [
+            "HttpLogonUser()"
+        ],
+        "description": "HttpLogonUser"
+    },
+    "HttpOtherContent": {
+        "prefix": "HttpOtherContent",
+        "body": [
+            "HttpOtherContent()"
+        ],
+        "description": "HttpOtherContent"
+    },
+    "HttpPost": {
+        "prefix": "HttpPost",
+        "body": [
+            "HttpPost(${1:cExp01}, ${2:[cExp02]}, ${3:[cExp03]}, ${4:[nExp04]}, ${5:[aExp05]}, ;",
+            "${6:[cExp06]})"
+        ],
+        "description": "HttpPost"
+    },
+    "HttpPostXml": {
+        "prefix": "HttpPostXml",
+        "body": [
+            "HttpPostXml(${1:cExp01}, ${2:[cExp02]}, ${3:cExp03}, ${4:[nExp04]})"
+        ],
+        "description": "HttpPostXml"
+    },
+    "HttpPragma": {
+        "prefix": "HttpPragma",
+        "body": [
+            "HttpPragma(${1:cExp01})"
+        ],
+        "description": "HttpPragma"
+    },
+    "HttpQuote": {
+        "prefix": "HttpQuote",
+        "body": [
+            "HttpQuote(${1:cExp01}, ${2:cExp02}, ${3:[cExp03]}, ${4:[cExp04]}, ${5:[nExp05]}, ;",
+            "${6:[aExp06]}, ${7:[cExp07]})"
+        ],
+        "description": "HttpQuote"
+    },
+    "HttpRCTDisp": {
+        "prefix": "HttpRCTDisp",
+        "body": [
+            "HttpRCTDisp()"
+        ],
+        "description": "HttpRCTDisp"
+    },
+    "HttpRCTLen": {
+        "prefix": "HttpRCTLen",
+        "body": [
+            "HttpRCTLen(${1:[nExp01]})"
+        ],
+        "description": "HttpRCTLen"
+    },
+    "HttpRCTType": {
+        "prefix": "HttpRCTType",
+        "body": [
+            "HttpRCTType()"
+        ],
+        "description": "HttpRCTType"
+    },
+    "HttpSend": {
+        "prefix": "HttpSend",
+        "body": [
+            "HttpSend(${1:cExp01})"
+        ],
+        "description": "HttpSend"
+    },
+    "HttpSetPart": {
+        "prefix": "HttpSetPart",
+        "body": [
+            "HttpSetPart(${1:lExp01})"
+        ],
+        "description": "HttpSetPart"
+    },
+    "HttpSetPass": {
+        "prefix": "HttpSetPass",
+        "body": [
+            "HttpSetPass(${1:cExp01}, ${2:cExp02}, ${3:[lExp03]})"
+        ],
+        "description": "HttpSetPass"
+    },
+    "HttpSGet": {
+        "prefix": "HttpSGet",
+        "body": [
+            "HttpSGet(${1:cExp01}, ${2:cExp02}, ${3:cExp03}, ${4:cExp04}, ${5:[cExp05]}, ;",
+            "${6:[nExp06]}, ${7:[aExp07]}, ${8:[cExp08]}, ${9:[lExp09]})"
+        ],
+        "description": "HttpSGet"
+    },
+    "HttpSPost": {
+        "prefix": "HttpSPost",
+        "body": [
+            "HttpSPost(${1:cExp01}, ${2:cExp02}, ${3:cExp03}, ${4:cExp04}, ${5:[cExp05]}, ;",
+            "${6:[cExp06]}, ${7:[nExp07]}, ${8:[aExp08]}, ${9:[cExp09]}, ${10:[lExp10]})"
+        ],
+        "description": "HttpSPost"
+    },
+    "HttpSRCode": {
+        "prefix": "HttpSRCode",
+        "body": [
+            "HttpSRCode(${1:nExp01}, ${2:cExp02})"
+        ],
+        "description": "HttpSRCode"
+    },
+    "HttpSSLClient": {
+        "prefix": "HttpSSLClient",
+        "body": [
+            "HttpSSLClient(${1:nExp01}, ${2:nExp02}, ${3:nExp03}, ${4:cExp04}, ${5:cExp05}, ;",
+            "${6:cExp06}, ${7:[nExp07]}, ${8:[lExp08]}, ${9:[nExp09]}, ${10:[nExp10]}, ;",
+            "${11:[nExp11]}, ${12:[cExp12]}, ${13:[lExp13]})"
+        ],
+        "description": "HttpSSLClient"
+    },
+    "i2bin": {
+        "prefix": "i2bin",
+        "body": [
+            "i2bin(${1:nExp01})"
+        ],
+        "description": "i2bin"
+    },
+    "indexkey": {
+        "prefix": "indexkey",
+        "body": [
+            "indexkey(${1:[nExp01]})"
+        ],
+        "description": "indexkey"
+    },
+    "indexord": {
+        "prefix": "indexord",
+        "body": [
+            "indexord()"
+        ],
+        "description": "indexord"
+    },
+    "InitPrint": {
+        "prefix": "InitPrint",
+        "body": [
+            "InitPrint(${1:[nExp01]}, ${2:[cExp02]}, ${3:[cExp03]}, ${4:[lExp04]}, ${5:[cExp05]})"
+        ],
+        "description": "InitPrint"
+    },
+    "int": {
+        "prefix": "int",
+        "body": [
+            "int(${1:cExp01}, ${2:cExp02}, ${3:[cExp03]}, ${4:[nExp04]}, ${5:[lExp05]}, ;",
+            "${6:[cExp06]}, ${7:[cExp07]}, ${8:[cExp08]})"
+        ],
+        "description": "int"
+    },
+    "InteropAgt": {
+        "prefix": "InteropAgt",
+        "body": [
+            "InteropAgt(${1:[lExp01]}, ${2:[lExp02]}, ${3:[cExp03]}, ${4:[nExp04]})"
+        ],
+        "description": "InteropAgt"
+    },
+    "IPCCount": {
+        "prefix": "IPCCount",
+        "body": [
+            "IPCCount(${1:cExp01})"
+        ],
+        "description": "IPCCount"
+    },
+    "IPCGo": {
+        "prefix": "IPCGo",
+        "body": [
+            "IPCGo(${1:cExp01}, ${2:[xExp02]}, ${3:[xExp03]}, ${4:[xExp04]}, ${5:[xExp05]}, ;",
+            "${6:[xExp06]}, ${7:[xExp07]}, ${8:[xExp08]}, ${9:[xExp09]}, ${10:[xExp10]}, ;",
+            "${11:[xExp11]}, ${12:[xExp12]}, ${13:[xExp13]}, ${14:[xExp14]}, ${15:[xExp15]}, ;",
+            "${16:[xExp16]}, ${17:[xExp17]}, ${18:[xExp18]}, ${19:[xExp19]}, ${20:[xExp20]}, ;",
+            "${21:[xExp21]}, ${22:[xExp22]}, ${23:[xExp23]}, ${24:[xExp24]}, ${25:[xExp25]}, ;",
+            "${26:[xExp26]}, ${27:[xExp27]}, ${28:[xExp28]}, ${29:[xExp29]}, ${30:[xExp30]}, ;",
+            "${31:[xExp31]}, ${32:[xExp32]}, ${33:[xExp33]}, ${34:[xExp34]}, ${35:[xExp35]}, ;",
+            "${36:[xExp36]}, ${37:[xExp37]}, ${38:[xExp38]}, ${39:[xExp39]}, ${40:[xExp40]}, ;",
+            "${41:[xExp41]}, ${42:[xExp42]}, ${43:[xExp43]}, ${44:[xExp44]}, ${45:[xExp45]}, ;",
+            "${46:[xExp46]}, ${47:[xExp47]}, ${48:[xExp48]}, ${49:[xExp49]})"
+        ],
+        "description": "IPCGo"
+    },
+    "IPCWait": {
+        "prefix": "IPCWait",
+        "body": [
+            "IPCWait(${1:nExp01}, ${2:[xExp02]}, ${3:[xExp03]}, ${4:[xExp04]}, ${5:[xExp05]}, ;",
+            "${6:[xExp06]}, ${7:[xExp07]}, ${8:[xExp08]}, ${9:[xExp09]}, ${10:[xExp10]}, ;",
+            "${11:[xExp11]}, ${12:[xExp12]}, ${13:[xExp13]}, ${14:[xExp14]}, ${15:[xExp15]}, ;",
+            "${16:[xExp16]}, ${17:[xExp17]}, ${18:[xExp18]}, ${19:[xExp19]}, ${20:[xExp20]}, ;",
+            "${21:[xExp21]}, ${22:[xExp22]}, ${23:[xExp23]}, ${24:[xExp24]}, ${25:[xExp25]}, ;",
+            "${26:[xExp26]}, ${27:[xExp27]}, ${28:[xExp28]}, ${29:[xExp29]}, ${30:[xExp30]}, ;",
+            "${31:[xExp31]}, ${32:[xExp32]}, ${33:[xExp33]}, ${34:[xExp34]}, ${35:[xExp35]}, ;",
+            "${36:[xExp36]}, ${37:[xExp37]}, ${38:[xExp38]}, ${39:[xExp39]}, ${40:[xExp40]}, ;",
+            "${41:[xExp41]}, ${42:[xExp42]}, ${43:[xExp43]}, ${44:[xExp44]}, ${45:[xExp45]})"
+        ],
+        "description": "IPCWait"
+    },
+    "IPCWaitEx": {
+        "prefix": "IPCWaitEx",
+        "body": [
+            "IPCWaitEx(${1:cExp01}, ${2:nExp02}, ${3:[xExp03]}, ${4:[xExp04]}, ${5:[xExp05]}, ;",
+            "${6:[xExp06]}, ${7:[xExp07]}, ${8:[xExp08]}, ${9:[xExp09]}, ${10:[xExp10]}, ;",
+            "${11:[xExp11]}, ${12:[xExp12]}, ${13:[xExp13]}, ${14:[xExp14]}, ${15:[xExp15]}, ;",
+            "${16:[xExp16]}, ${17:[xExp17]}, ${18:[xExp18]}, ${19:[xExp19]}, ${20:[xExp20]}, ;",
+            "${21:[xExp21]}, ${22:[xExp22]}, ${23:[xExp23]}, ${24:[xExp24]}, ${25:[xExp25]}, ;",
+            "${26:[xExp26]}, ${27:[xExp27]}, ${28:[xExp28]}, ${29:[xExp29]}, ${30:[xExp30]}, ;",
+            "${31:[xExp31]}, ${32:[xExp32]}, ${33:[xExp33]}, ${34:[xExp34]}, ${35:[xExp35]}, ;",
+            "${36:[xExp36]}, ${37:[xExp37]}, ${38:[xExp38]}, ${39:[xExp39]}, ${40:[xExp40]}, ;",
+            "${41:[xExp41]}, ${42:[xExp42]}, ${43:[xExp43]}, ${44:[xExp44]}, ${45:[xExp45]}, ;",
+            "${46:[xExp46]}, ${47:[xExp47]}, ${48:[xExp48]}, ${49:[xExp49]})"
+        ],
+        "description": "IPCWaitEx"
+    },
+    "isalpha": {
+        "prefix": "isalpha",
+        "body": [
+            "isalpha(${1:cExp01})"
+        ],
+        "description": "isalpha"
+    },
+    "isdigit": {
+        "prefix": "isdigit",
+        "body": [
+            "isdigit(${1:cExp01})"
+        ],
+        "description": "isdigit"
+    },
+    "islower": {
+        "prefix": "islower",
+        "body": [
+            "islower(${1:cExp01})"
+        ],
+        "description": "islower"
+    },
+    "IsPlugin": {
+        "prefix": "IsPlugin",
+        "body": [
+            "IsPlugin()"
+        ],
+        "description": "IsPlugin"
+    },
+    "IsPrinter2": {
+        "prefix": "IsPrinter2",
+        "body": [
+            "IsPrinter2(${1:[xExp01]}, ${2:[lExp02]}, ${3:[nExp03]}, ${4:[nExp04]})"
+        ],
+        "description": "IsPrinter2"
+    },
+    "IsSecure": {
+        "prefix": "IsSecure",
+        "body": [
+            "IsSecure()"
+        ],
+        "description": "IsSecure"
+    },
+    "IsSrvUnix": {
+        "prefix": "IsSrvUnix",
+        "body": [
+            "IsSrvUnix()"
+        ],
+        "description": "IsSrvUnix"
+    },
+    "isupper": {
+        "prefix": "isupper",
+        "body": [
+            "isupper(${1:cExp01})"
+        ],
+        "description": "isupper"
+    },
+    "JobInfo": {
+        "prefix": "JobInfo",
+        "body": [
+            "JobInfo()"
+        ],
+        "description": "JobInfo"
+    },
+    "KillApp": {
+        "prefix": "KillApp",
+        "body": [
+            "KillApp(${1:[lExp01]})"
+        ],
+        "description": "KillApp"
+    },
+    "KillUser": {
+        "prefix": "KillUser",
+        "body": [
+            "KillUser(${1:cExp01}, ${2:cExp02}, ${3:nExp03}, ${4:cExp04})"
+        ],
+        "description": "KillUser"
+    },
+    "l2bin": {
+        "prefix": "l2bin",
+        "body": [
+            "l2bin(${1:nExp01})"
+        ],
+        "description": "l2bin"
+    },
+    "lAnd": {
+        "prefix": "lAnd",
+        "body": [
+            "lAnd(${1:nExp01}, ${2:nExp02}, ${3:[nExp03]}, ${4:[nExp04]}, ${5:[nExp05]}, ;",
+            "${6:[nExp06]}, ${7:[nExp07]}, ${8:[nExp08]}, ${9:[nExp09]}, ${10:[nExp10]}, ;",
+            "${11:[nExp11]}, ${12:[nExp12]}, ${13:[nExp13]}, ${14:[nExp14]})"
+        ],
+        "description": "lAnd"
+    },
+    "lastrec": {
+        "prefix": "lastrec",
+        "body": [
+            "lastrec()"
+        ],
+        "description": "lastrec"
+    },
+    "left": {
+        "prefix": "left",
+        "body": [
+            "left(${1:cExp01}, ${2:nExp02})"
+        ],
+        "description": "left"
+    },
+    "listDrives": {
+        "prefix": "listDrives",
+        "body": [
+            "listDrives(${1:aExp01}, ${2:aExp02}, ${3:nExp03})"
+        ],
+        "description": "listDrives"
+    },
+    "localToUtc": {
+        "prefix": "localToUtc",
+        "body": [
+            "localToUtc(${1:cExp01}, ${2:cExp02}, ${3:[nExp03]})"
+        ],
+        "description": "localToUtc"
+    },
+    "log": {
+        "prefix": "log",
+        "body": [
+            "log(${1:nExp01})"
+        ],
+        "description": "log"
+    },
+    "Log10": {
+        "prefix": "Log10",
+        "body": [
+            "Log10(${1:nExp01})"
+        ],
+        "description": "Log10"
+    },
+    "LogMsg": {
+        "prefix": "LogMsg",
+        "body": [
+            "LogMsg(${1:cExp01}, ${2:nExp02}, ${3:nExp03}, ${4:nExp04}, ${5:cExp05}, ;",
+            "${6:cExp06}, ${7:[xExp07]}, ${8:[xExp08]}, ${9:[xExp09]}, ${10:[xExp10]}, ;",
+            "${11:[xExp11]}, ${12:[xExp12]}, ${13:[xExp13]}, ${14:[xExp14]}, ${15:[xExp15]}, ;",
+            "${16:[xExp16]}, ${17:[xExp17]}, ${18:[xExp18]}, ${19:[xExp19]}, ${20:[xExp20]}, ;",
+            "${21:[xExp21]}, ${22:[xExp22]}, ${23:[xExp23]}, ${24:[xExp24]}, ${25:[xExp25]}, ;",
+            "${26:[xExp26]}, ${27:[xExp27]}, ${28:[xExp28]}, ${29:[xExp29]}, ${30:[xExp30]})"
+        ],
+        "description": "LogMsg"
+    },
+    "LogUserName": {
+        "prefix": "LogUserName",
+        "body": [
+            "LogUserName()"
+        ],
+        "description": "LogUserName"
+    },
+    "Look4Bit": {
+        "prefix": "Look4Bit",
+        "body": [
+            "Look4Bit(${1:cExp01}, ${2:nExp02}, ${3:nExp03}, ${4:nExp04})"
+        ],
+        "description": "Look4Bit"
+    },
+    "lOr": {
+        "prefix": "lOr",
+        "body": [
+            "lOr(${1:nExp01}, ${2:nExp02}, ${3:[nExp03]}, ${4:[nExp04]}, ${5:[nExp05]}, ;",
+            "${6:[nExp06]}, ${7:[nExp07]}, ${8:[nExp08]}, ${9:[nExp09]}, ${10:[nExp10]}, ;",
+            "${11:[nExp11]}, ${12:[nExp12]}, ${13:[nExp13]}, ${14:[nExp14]})"
+        ],
+        "description": "lOr"
+    },
+    "LS_GetGLicense": {
+        "prefix": "LS_GetGLicense",
+        "body": [
+            "LS_GetGLicense(${1:nExp01}, ${2:nExp02}, ${3:cExp03}, ${4:[cExp04]}, ${5:[nExp05]})"
+        ],
+        "description": "LS_GetGLicense"
+    },
+    "LS_GetIdHw": {
+        "prefix": "LS_GetIdHw",
+        "body": [
+            "LS_GetIdHw(${1:[lExp01]}, ${2:[lExp02]})"
+        ],
+        "description": "LS_GetIdHw"
+    },
+    "LS_GetRTotal": {
+        "prefix": "LS_GetRTotal",
+        "body": [
+            "LS_GetRTotal(${1:nExp01}, ${2:[lExp02]})"
+        ],
+        "description": "LS_GetRTotal"
+    },
+    "LS_KillSession": {
+        "prefix": "LS_KillSession",
+        "body": [
+            "LS_KillSession(${1:cExp01}, ${2:nExp02}, ${3:nExp03}, ${4:nExp04}, ${5:nExp05}, ;",
+            "${6:nExp06}, ${7:cExp07}, ${8:nExp08})"
+        ],
+        "description": "LS_KillSession"
+    },
+    "lupdate": {
+        "prefix": "lupdate",
+        "body": [
+            "lupdate()"
+        ],
+        "description": "lupdate"
+    },
+    "MailVersion": {
+        "prefix": "MailVersion",
+        "body": [
+            "MailVersion()"
+        ],
+        "description": "MailVersion"
+    },
+    "makedir": {
+        "prefix": "makedir",
+        "body": [
+            "makedir(${1:cExp01}, ${2:[nExp02]}, ${3:[lExp03]})"
+        ],
+        "description": "makedir"
+    },
+    "Match": {
+        "prefix": "Match",
+        "body": [
+            "Match(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "Match"
+    },
+    "mathC": {
+        "prefix": "mathC",
+        "body": [
+            "mathC(${1:xExp01}, ${2:cExp02}, ${3:xExp03})"
+        ],
+        "description": "mathC"
+    },
+    "max": {
+        "prefix": "max",
+        "body": [
+            "max(${1:xExp01}, ${2:xExp02})"
+        ],
+        "description": "max"
+    },
+    "MD5": {
+        "prefix": "MD5",
+        "body": [
+            "MD5(${1:cExp01}, ${2:[nExp02]})"
+        ],
+        "description": "MD5"
+    },
+    "MD5FILE": {
+        "prefix": "MD5FILE",
+        "body": [
+            "MD5FILE(${1:cExp01}, ${2:[nExp02]}, ${3:[nExp03]})"
+        ],
+        "description": "MD5FILE"
+    },
+    "MemGlbSize": {
+        "prefix": "MemGlbSize",
+        "body": [
+            "MemGlbSize()"
+        ],
+        "description": "MemGlbSize"
+    },
+    "memoline": {
+        "prefix": "memoline",
+        "body": [
+            "memoline(${1:cExp01}, ${2:[nExp02]}, ${3:[nExp03]}, ${4:[nExp04]}, ${5:[lExp05]})"
+        ],
+        "description": "memoline"
+    },
+    "memoread": {
+        "prefix": "memoread",
+        "body": [
+            "memoread(${1:cExp01}, ${2:[lExp02]})"
+        ],
+        "description": "memoread"
+    },
+    "memowrit": {
+        "prefix": "memowrit",
+        "body": [
+            "memowrit(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "memowrit"
+    },
+    "memowrite": {
+        "prefix": "memowrite",
+        "body": [
+            "memowrite(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "memowrite"
+    },
+    "MessageBox": {
+        "prefix": "MessageBox",
+        "body": [
+            "MessageBox(${1:xExp01}, ${2:xExp02}, ${3:nExp03})"
+        ],
+        "description": "MessageBox"
+    },
+    "min": {
+        "prefix": "min",
+        "body": [
+            "min(${1:xExp01}, ${2:xExp02})"
+        ],
+        "description": "min"
+    },
+    "mlcount": {
+        "prefix": "mlcount",
+        "body": [
+            "mlcount(${1:cExp01}, ${2:[nExp02]}, ${3:[nExp03]}, ${4:[lExp04]})"
+        ],
+        "description": "mlcount"
+    },
+    "mod": {
+        "prefix": "mod",
+        "body": [
+            "mod(${1:cExp01}, ${2:nExp02}, ${3:[nExp03]}, ${4:[lExp04]})"
+        ],
+        "description": "mod"
+    },
+    "month": {
+        "prefix": "month",
+        "body": [
+            "month(${1:DR})"
+        ],
+        "description": "month"
+    },
+    "MSCalculator": {
+        "prefix": "MSCalculator",
+        "body": [
+            "MSCalculator()"
+        ],
+        "description": "MSCalculator"
+    },
+    "msCompress": {
+        "prefix": "msCompress",
+        "body": [
+            "msCompress(${1:xExp01}, ${2:[cExp02]}, ${3:[cExp03]}, ${4:[lExp04]})"
+        ],
+        "description": "msCompress"
+    },
+    "mscrc32": {
+        "prefix": "mscrc32",
+        "body": [
+            "mscrc32(${1:cExp01})"
+        ],
+        "description": "mscrc32"
+    },
+    "mscrc32str": {
+        "prefix": "mscrc32str",
+        "body": [
+            "mscrc32str(${1:cExp01})"
+        ],
+        "description": "mscrc32str"
+    },
+    "msdecomp": {
+        "prefix": "msdecomp",
+        "body": [
+            "msdecomp(${1:cExp01}, ${2:[cExp02]}, ${3:[cExp03]}, ${4:[nExp04]}, ${5:[lExp05]})"
+        ],
+        "description": "msdecomp"
+    },
+    "MsgInfo": {
+        "prefix": "MsgInfo",
+        "body": [
+            "MsgInfo(${1:xExp01}, ${2:xExp02})"
+        ],
+        "description": "MsgInfo"
+    },
+    "MsgNoYes": {
+        "prefix": "MsgNoYes",
+        "body": [
+            "MsgNoYes(${1:xExp01}, ${2:xExp02})"
+        ],
+        "description": "MsgNoYes"
+    },
+    "MsgRetryCal": {
+        "prefix": "MsgRetryCal",
+        "body": [
+            "MsgRetryCal(${1:xExp01}, ${2:xExp02})"
+        ],
+        "description": "MsgRetryCal"
+    },
+    "MsgRun": {
+        "prefix": "MsgRun",
+        "body": [
+            "MsgRun(${1:cExp01}, ${2:[cExp02]}, ${3:[bExp03]})"
+        ],
+        "description": "MsgRun"
+    },
+    "msparse": {
+        "prefix": "msparse",
+        "body": [
+            "msparse(${1:cExp01}, ${2:cExp02}, ${3:[lExp03]})"
+        ],
+        "description": "msparse"
+    },
+    "msparseerror": {
+        "prefix": "msparseerror",
+        "body": [
+            "msparseerror()"
+        ],
+        "description": "msparseerror"
+    },
+    "msparsefull": {
+        "prefix": "msparsefull",
+        "body": [
+            "msparsefull(${1:cExp01}, ${2:cExp02}, ${3:cExp03}, ${4:cExp04}, ${5:[lExp05]})"
+        ],
+        "description": "msparsefull"
+    },
+    "nAnd": {
+        "prefix": "nAnd",
+        "body": [
+            "nAnd(${1:nExp01}, ${2:nExp02}, ${3:[nExp03]}, ${4:[nExp04]}, ${5:[nExp05]}, ;",
+            "${6:[nExp06]}, ${7:[nExp07]}, ${8:[nExp08]}, ${9:[nExp09]}, ${10:[nExp10]}, ;",
+            "${11:[nExp11]}, ${12:[nExp12]}, ${13:[nExp13]}, ${14:[nExp14]})"
+        ],
+        "description": "nAnd"
+    },
+    "neterr": {
+        "prefix": "neterr",
+        "body": [
+            "neterr(${1:[lExp01]})"
+        ],
+        "description": "neterr"
+    },
+    "nOr": {
+        "prefix": "nOr",
+        "body": [
+            "nOr(${1:nExp01}, ${2:nExp02}, ${3:[nExp03]}, ${4:[nExp04]}, ${5:[nExp05]}, ;",
+            "${6:[nExp06]}, ${7:[nExp07]}, ${8:[nExp08]}, ${9:[nExp09]}, ${10:[nExp10]}, ;",
+            "${11:[nExp11]}, ${12:[nExp12]}, ${13:[nExp13]}, ${14:[nExp14]})"
+        ],
+        "description": "nOr"
+    },
+    "notbit": {
+        "prefix": "notbit",
+        "body": [
+            "notbit(${1:cExp01}, ${2:nExp02})"
+        ],
+        "description": "notbit"
+    },
+    "ntol": {
+        "prefix": "ntol",
+        "body": [
+            "ntol(${1:nExp01})"
+        ],
+        "description": "ntol"
+    },
+    "nXOr": {
+        "prefix": "nXOr",
+        "body": [
+            "nXOr(${1:nExp01}, ${2:nExp02}, ${3:[nExp03]}, ${4:[nExp04]}, ${5:[nExp05]}, ;",
+            "${6:[nExp06]}, ${7:[nExp07]}, ${8:[nExp08]}, ${9:[nExp09]}, ${10:[nExp10]}, ;",
+            "${11:[nExp11]}, ${12:[nExp12]}, ${13:[nExp13]}, ${14:[nExp14]})"
+        ],
+        "description": "nXOr"
+    },
+    "ordbagname": {
+        "prefix": "ordbagname",
+        "body": [
+            "ordbagname(${1:xExp01})"
+        ],
+        "description": "ordbagname"
+    },
+    "orddescend": {
+        "prefix": "orddescend",
+        "body": [
+            "orddescend(${1:[xExp01]}, ${2:[cExp02]}, ${3:[lExp03]})"
+        ],
+        "description": "orddescend"
+    },
+    "ordkey": {
+        "prefix": "ordkey",
+        "body": [
+            "ordkey(${1:xExp01}, ${2:[cExp02]})"
+        ],
+        "description": "ordkey"
+    },
+    "ordname": {
+        "prefix": "ordname",
+        "body": [
+            "ordname(${1:nExp01}, ${2:[cExp02]})"
+        ],
+        "description": "ordname"
+    },
+    "ordnumber": {
+        "prefix": "ordnumber",
+        "body": [
+            "ordnumber(${1:cExp01}, ${2:[cExp02]})"
+        ],
+        "description": "ordnumber"
+    },
+    "ordsetfocus": {
+        "prefix": "ordsetfocus",
+        "body": [
+            "ordsetfocus(${1:[xExp01]}, ${2:[cExp02]})"
+        ],
+        "description": "ordsetfocus"
+    },
+    "pad": {
+        "prefix": "pad",
+        "body": [
+            "pad(${1:xExp01}, ${2:nExp02}, ${3:[cExp03]})"
+        ],
+        "description": "pad"
+    },
+    "padc": {
+        "prefix": "padc",
+        "body": [
+            "padc(${1:xExp01}, ${2:nExp02}, ${3:[cExp03]})"
+        ],
+        "description": "padc"
+    },
+    "padl": {
+        "prefix": "padl",
+        "body": [
+            "padl(${1:xExp01}, ${2:nExp02}, ${3:[cExp03]})"
+        ],
+        "description": "padl"
+    },
+    "padr": {
+        "prefix": "padr",
+        "body": [
+            "padr(${1:xExp01}, ${2:nExp02}, ${3:[cExp03]})"
+        ],
+        "description": "padr"
+    },
+    "PatchInfo": {
+        "prefix": "PatchInfo",
+        "body": [
+            "PatchInfo(${1:cExp01}, ${2:aExp02}, ${3:aExp03}, ${4:[lExp04]})"
+        ],
+        "description": "PatchInfo"
+    },
+    "pcount": {
+        "prefix": "pcount",
+        "body": [
+            "pcount()"
+        ],
+        "description": "pcount"
+    },
+    "PEMInfo": {
+        "prefix": "PEMInfo",
+        "body": [
+            "PEMInfo(${1:cExp01}, ${2:[cExp02]})"
+        ],
+        "description": "PEMInfo"
+    },
+    "PFXCA2PEM": {
+        "prefix": "PFXCA2PEM",
+        "body": [
+            "PFXCA2PEM(${1:cExp01}, ${2:cExp02}, ${3:cExp03}, ${4:[cExp04]})"
+        ],
+        "description": "PFXCA2PEM"
+    },
+    "PFXCert2PEM": {
+        "prefix": "PFXCert2PEM",
+        "body": [
+            "PFXCert2PEM(${1:cExp01}, ${2:cExp02}, ${3:cExp03}, ${4:[cExp04]})"
+        ],
+        "description": "PFXCert2PEM"
+    },
+    "PFXInfo": {
+        "prefix": "PFXInfo",
+        "body": [
+            "PFXInfo(${1:cExp01}, ${2:[cExp02]})"
+        ],
+        "description": "PFXInfo"
+    },
+    "PFXKey2PEM": {
+        "prefix": "PFXKey2PEM",
+        "body": [
+            "PFXKey2PEM(${1:cExp01}, ${2:cExp02}, ${3:cExp03}, ${4:[cExp04]})"
+        ],
+        "description": "PFXKey2PEM"
+    },
+    "PK8Key2PEM": {
+        "prefix": "PK8Key2PEM",
+        "body": [
+            "PK8Key2PEM(${1:cExp01}, ${2:cExp02}, ${3:cExp03}, ${4:[cExp04]})"
+        ],
+        "description": "PK8Key2PEM"
+    },
+    "PreparePrint": {
+        "prefix": "PreparePrint",
+        "body": [
+            "PreparePrint(${1:lExp01}, ${2:cExp02}, ${3:lExp03}, ${4:cExp04}, ${5:[lExp05]}, ;",
+            "${6:[nExp06]})"
+        ],
+        "description": "PreparePrint"
+    },
+    "PrintOut": {
+        "prefix": "PrintOut",
+        "body": [
+            "PrintOut(${1:nExp01}, ${2:nExp02}, ${3:[xExp03]}, ${4:[cExp04]}, ${5:[oExp05]})"
+        ],
+        "description": "PrintOut"
+    },
+    "PrivSignRSA": {
+        "prefix": "PrivSignRSA",
+        "body": [
+            "PrivSignRSA(${1:cExp01}, ${2:cExp02}, ${3:nExp03}, ${4:cExp04}, ${5:[cExp05]}, ;",
+            "${6:[nExp06]})"
+        ],
+        "description": "PrivSignRSA"
+    },
+    "PrivVeryRSA": {
+        "prefix": "PrivVeryRSA",
+        "body": [
+            "PrivVeryRSA(${1:cExp01}, ${2:cExp02}, ${3:nExp03}, ${4:cExp04}, ${5:[cExp05]}, ;",
+            "${6:[nExp06]})"
+        ],
+        "description": "PrivVeryRSA"
+    },
+    "PrnFlush": {
+        "prefix": "PrnFlush",
+        "body": [
+            "PrnFlush()"
+        ],
+        "description": "PrnFlush"
+    },
+    "procline": {
+        "prefix": "procline",
+        "body": [
+            "procline(${1:[nExp01]})"
+        ],
+        "description": "procline"
+    },
+    "procName": {
+        "prefix": "procName",
+        "body": [
+            "procName(${1:[nExp01]})"
+        ],
+        "description": "procName"
+    },
+    "PtGetSessions": {
+        "prefix": "PtGetSessions",
+        "body": [
+            "PtGetSessions()"
+        ],
+        "description": "PtGetSessions"
+    },
+    "PtGetTheme": {
+        "prefix": "PtGetTheme",
+        "body": [
+            "PtGetTheme()"
+        ],
+        "description": "PtGetTheme"
+    },
+    "PtInternal": {
+        "prefix": "PtInternal",
+        "body": [
+            "PtInternal(${1:nExp01}, ${2:cExp02})"
+        ],
+        "description": "PtInternal"
+    },
+    "PtKillSession": {
+        "prefix": "PtKillSession",
+        "body": [
+            "PtKillSession(${1:cExp01})"
+        ],
+        "description": "PtKillSession"
+    },
+    "PtRunInSession": {
+        "prefix": "PtRunInSession",
+        "body": [
+            "PtRunInSession(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "PtRunInSession"
+    },
+    "PtsetAcento": {
+        "prefix": "PtsetAcento",
+        "body": [
+            "PtsetAcento(${1:lExp01})"
+        ],
+        "description": "PtsetAcento"
+    },
+    "PtSetTheme": {
+        "prefix": "PtSetTheme",
+        "body": [
+            "PtSetTheme(${1:cExp01})"
+        ],
+        "description": "PtSetTheme"
+    },
+    "PutGlbValue": {
+        "prefix": "PutGlbValue",
+        "body": [
+            "PutGlbValue(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "PutGlbValue"
+    },
+    "PutGlbVars": {
+        "prefix": "PutGlbVars",
+        "body": [
+            "PutGlbVars(${1:cExp01}, ${2:[xExp02]}, ${3:[xExp03]}, ${4:[xExp04]}, ${5:[xExp05]}, ;",
+            "${6:[xExp06]}, ${7:[xExp07]}, ${8:[xExp08]}, ${9:[xExp09]}, ${10:[xExp10]}, ;",
+            "${11:[xExp11]}, ${12:[xExp12]}, ${13:[xExp13]}, ${14:[xExp14]}, ${15:[xExp15]}, ;",
+            "${16:[xExp16]}, ${17:[xExp17]}, ${18:[xExp18]}, ${19:[xExp19]}, ${20:[xExp20]}, ;",
+            "${21:[xExp21]}, ${22:[xExp22]}, ${23:[xExp23]}, ${24:[xExp24]}, ${25:[xExp25]}, ;",
+            "${26:[xExp26]}, ${27:[xExp27]}, ${28:[xExp28]}, ${29:[xExp29]}, ${30:[xExp30]}, ;",
+            "${31:[xExp31]}, ${32:[xExp32]}, ${33:[xExp33]}, ${34:[xExp34]}, ${35:[xExp35]}, ;",
+            "${36:[xExp36]}, ${37:[xExp37]}, ${38:[xExp38]}, ${39:[xExp39]}, ${40:[xExp40]}, ;",
+            "${41:[xExp41]})"
+        ],
+        "description": "PutGlbVars"
+    },
+    "qQOut": {
+        "prefix": "qQOut",
+        "body": [
+            "qQOut(${1:[xExp01]}, ${2:[xExp02]}, ${3:[xExp03]}, ${4:[xExp04]}, ${5:[xExp05]}, ;",
+            "${6:[xExp06]}, ${7:[xExp07]}, ${8:[xExp08]}, ${9:[xExp09]}, ${10:[xExp10]}, ;",
+            "${11:[xExp11]}, ${12:[xExp12]}, ${13:[xExp13]}, ${14:[xExp14]}, ${15:[xExp15]}, ;",
+            "${16:[xExp16]}, ${17:[xExp17]}, ${18:[xExp18]}, ${19:[xExp19]}, ${20:[xExp20]}, ;",
+            "${21:[xExp21]}, ${22:[xExp22]}, ${23:[xExp23]}, ${24:[xExp24]})"
+        ],
+        "description": "qQOut"
+    },
+    "rat": {
+        "prefix": "rat",
+        "body": [
+            "rat(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "rat"
+    },
+    "rc4crypt": {
+        "prefix": "rc4crypt",
+        "body": [
+            "rc4crypt(${1:cExp01}, ${2:cExp02}, ${3:[lExp03]}, ${4:[lExp04]})"
+        ],
+        "description": "rc4crypt"
+    },
+    "rddname": {
+        "prefix": "rddname",
+        "body": [
+            "rddname()"
+        ],
+        "description": "rddname"
+    },
+    "rddsetdefault": {
+        "prefix": "rddsetdefault",
+        "body": [
+            "rddsetdefault(${1:[cExp01]})"
+        ],
+        "description": "rddsetdefault"
+    },
+    "RealRDD": {
+        "prefix": "RealRDD",
+        "body": [
+            "RealRDD()"
+        ],
+        "description": "RealRDD"
+    },
+    "recn": {
+        "prefix": "recn",
+        "body": [
+            "recn()"
+        ],
+        "description": "recn"
+    },
+    "recno": {
+        "prefix": "recno",
+        "body": [
+            "recno()"
+        ],
+        "description": "recno"
+    },
+    "recsize": {
+        "prefix": "recsize",
+        "body": [
+            "recsize()"
+        ],
+        "description": "recsize"
+    },
+    "ReleaseProgs": {
+        "prefix": "ReleaseProgs",
+        "body": [
+            "ReleaseProgs()"
+        ],
+        "description": "ReleaseProgs"
+    },
+    "reloadSAML": {
+        "prefix": "reloadSAML",
+        "body": [
+            "reloadSAML(${1:[cExp01]})"
+        ],
+        "description": "reloadSAML"
+    },
+    "RemoteXVersion": {
+        "prefix": "RemoteXVersion",
+        "body": [
+            "RemoteXVersion()"
+        ],
+        "description": "RemoteXVersion"
+    },
+    "replicate": {
+        "prefix": "replicate",
+        "body": [
+            "replicate(${1:cExp01}, ${2:nExp02})"
+        ],
+        "description": "replicate"
+    },
+    "Resource2File": {
+        "prefix": "Resource2File",
+        "body": [
+            "Resource2File(${1:cExp01}, ${2:cExp02}, ${3:[nExp03]})"
+        ],
+        "description": "Resource2File"
+    },
+    "RetImgType": {
+        "prefix": "RetImgType",
+        "body": [
+            "RetImgType(${1:cExp01})"
+        ],
+        "description": "RetImgType"
+    },
+    "right": {
+        "prefix": "right",
+        "body": [
+            "right(${1:[lExp01]})"
+        ],
+        "description": "right"
+    },
+    "rlock": {
+        "prefix": "rlock",
+        "body": [
+            "rlock(${1:[xExp01]})"
+        ],
+        "description": "rlock"
+    },
+    "RmvToken": {
+        "prefix": "RmvToken",
+        "body": [
+            "RmvToken(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "RmvToken"
+    },
+    "RSAExponent": {
+        "prefix": "RSAExponent",
+        "body": [
+            "RSAExponent(${1:cExp01}, ${2:lExp02}, ${3:[cExp03]})"
+        ],
+        "description": "RSAExponent"
+    },
+    "RSAModulus": {
+        "prefix": "RSAModulus",
+        "body": [
+            "RSAModulus(${1:cExp01}, ${2:lExp02}, ${3:[cExp03]})"
+        ],
+        "description": "RSAModulus"
+    },
+    "saveIDPXML": {
+        "prefix": "saveIDPXML",
+        "body": [
+            "saveIDPXML(${1:cExp01}, ${2:cExp02}, ${3:[cExp03]})"
+        ],
+        "description": "saveIDPXML"
+    },
+    "seconds": {
+        "prefix": "seconds",
+        "body": [
+            "seconds()"
+        ],
+        "description": "seconds"
+    },
+    "sele": {
+        "prefix": "sele",
+        "body": [
+            "sele(${1:[cExp01]})"
+        ],
+        "description": "sele"
+    },
+    "select": {
+        "prefix": "select",
+        "body": [
+            "select(${1:[cExp01]})"
+        ],
+        "description": "select"
+    },
+    "SendtoFore": {
+        "prefix": "SendtoFore",
+        "body": [
+            "SendtoFore()"
+        ],
+        "description": "SendtoFore"
+    },
+    "SerialNumber": {
+        "prefix": "SerialNumber",
+        "body": [
+            "SerialNumber()"
+        ],
+        "description": "SerialNumber"
+    },
+    "set": {
+        "prefix": "set",
+        "body": [
+            "set(${1:[cExp01]})"
+        ],
+        "description": "set"
+    },
+    "SetCSS": {
+        "prefix": "SetCSS",
+        "body": [
+            "SetCSS(${1:cExp01})"
+        ],
+        "description": "SetCSS"
+    },
+    "SetDefCaption": {
+        "prefix": "SetDefCaption",
+        "body": [
+            "SetDefCaption(${1:cExp01})"
+        ],
+        "description": "SetDefCaption"
+    },
+    "SetDefFont": {
+        "prefix": "SetDefFont",
+        "body": [
+            "SetDefFont(${1:[xExp01]})"
+        ],
+        "description": "SetDefFont"
+    },
+    "SetFinishAppHandler": {
+        "prefix": "SetFinishAppHandler",
+        "body": [
+            "SetFinishAppHandler(${1:[cExp01]}, ${2:[xExp02]}, ${3:[xExp03]}, ${4:[xExp04]}, ${5:[xExp05]}, ;",
+            "${6:[xExp06]}, ${7:[xExp07]}, ${8:[xExp08]}, ${9:[xExp09]}, ${10:[xExp10]}, ;",
+            "${11:[xExp11]}, ${12:[xExp12]}, ${13:[xExp13]}, ${14:[xExp14]}, ${15:[xExp15]}, ;",
+            "${16:[xExp16]}, ${17:[xExp17]}, ${18:[xExp18]}, ${19:[xExp19]}, ${20:[xExp20]}, ;",
+            "${21:[xExp21]}, ${22:[xExp22]}, ${23:[xExp23]}, ${24:[xExp24]})"
+        ],
+        "description": "SetFinishAppHandler"
+    },
+    "SetFlatControls": {
+        "prefix": "SetFlatControls",
+        "body": [
+            "SetFlatControls(${1:lExp01})"
+        ],
+        "description": "SetFlatControls"
+    },
+    "SetFocus": {
+        "prefix": "SetFocus",
+        "body": [
+            "SetFocus(${1:[nExp01]})"
+        ],
+        "description": "SetFocus"
+    },
+    "setIDPConf": {
+        "prefix": "setIDPConf",
+        "body": [
+            "setIDPConf(${1:cExp01}, ${2:cExp02}, ${3:[cExp03]})"
+        ],
+        "description": "setIDPConf"
+    },
+    "SetKey": {
+        "prefix": "SetKey",
+        "body": [
+            "SetKey(${1:nExp01}, ${2:[bExp02]}, ${3:[cExp03]}, ${4:[cExp04]})"
+        ],
+        "description": "SetKey"
+    },
+    "SetKeyBlock": {
+        "prefix": "SetKeyBlock",
+        "body": [
+            "SetKeyBlock(${1:[bExp01]})"
+        ],
+        "description": "SetKeyBlock"
+    },
+    "SetMailObj": {
+        "prefix": "SetMailObj",
+        "body": [
+            "SetMailObj(${1:cExp01}, ${2:xExp02})"
+        ],
+        "description": "SetMailObj"
+    },
+    "SetNoProxyFor": {
+        "prefix": "SetNoProxyFor",
+        "body": [
+            "SetNoProxyFor(${1:cExp01}, ${2:[lExp02]})"
+        ],
+        "description": "SetNoProxyFor"
+    },
+    "SetPrc": {
+        "prefix": "SetPrc",
+        "body": [
+            "SetPrc(${1:nExp01}, ${2:nExp02})"
+        ],
+        "description": "SetPrc"
+    },
+    "SetProxy": {
+        "prefix": "SetProxy",
+        "body": [
+            "SetProxy(${1:cExp01}, ${2:nExp02}, ${3:[cExp03]}, ${4:[cExp04]}, ${5:[lExp05]})"
+        ],
+        "description": "SetProxy"
+    },
+    "SetRmtDate": {
+        "prefix": "SetRmtDate",
+        "body": [
+            "SetRmtDate(${1:DR})"
+        ],
+        "description": "SetRmtDate"
+    },
+    "setSAMLID": {
+        "prefix": "setSAMLID",
+        "body": [
+            "setSAMLID(${1:cExp01}, ${2:nExp02}, ${3:[cExp03]})"
+        ],
+        "description": "setSAMLID"
+    },
+    "setSAMLSvc": {
+        "prefix": "setSAMLSvc",
+        "body": [
+            "setSAMLSvc(${1:aExp01}, ${2:[cExp02]})"
+        ],
+        "description": "setSAMLSvc"
+    },
+    "setSPCert": {
+        "prefix": "setSPCert",
+        "body": [
+            "setSPCert(${1:cExp01}, ${2:cExp02}, ${3:cExp03}, ${4:cExp04}, ${5:[cExp05]})"
+        ],
+        "description": "setSPCert"
+    },
+    "SetSslObj": {
+        "prefix": "SetSslObj",
+        "body": [
+            "SetSslObj(${1:cExp01}, ${2:xExp02})"
+        ],
+        "description": "SetSslObj"
+    },
+    "SetTransparentColor": {
+        "prefix": "SetTransparentColor",
+        "body": [
+            "SetTransparentColor(${1:nExp01}, ${2:nExp02})"
+        ],
+        "description": "SetTransparentColor"
+    },
+    "SetWndDefault": {
+        "prefix": "SetWndDefault",
+        "body": [
+            "SetWndDefault(${1:[xExp01]})"
+        ],
+        "description": "SetWndDefault"
+    },
+    "SHA1": {
+        "prefix": "SHA1",
+        "body": [
+            "SHA1(${1:cExp01}, ${2:[nExp02]})"
+        ],
+        "description": "SHA1"
+    },
+    "SHA256": {
+        "prefix": "SHA256",
+        "body": [
+            "SHA256(${1:cExp01}, ${2:[nExp02]})"
+        ],
+        "description": "SHA256"
+    },
+    "SHA512": {
+        "prefix": "SHA512",
+        "body": [
+            "SHA512(${1:cExp01}, ${2:[nExp02]})"
+        ],
+        "description": "SHA512"
+    },
+    "ShellExecute": {
+        "prefix": "ShellExecute",
+        "body": [
+            "ShellExecute(${1:cExp01}, ${2:cExp02}, ${3:cExp03}, ${4:cExp04}, ${5:nExp05})"
+        ],
+        "description": "ShellExecute"
+    },
+    "ShowHelpCpo": {
+        "prefix": "ShowHelpCpo",
+        "body": [
+            "ShowHelpCpo(${1:[cExp01]}, ${2:[xExp02]}, ${3:[xExp03]}, ${4:[xExp04]}, ${5:[xExp05]})"
+        ],
+        "description": "ShowHelpCpo"
+    },
+    "ShowHelpDlg": {
+        "prefix": "ShowHelpDlg",
+        "body": [
+            "ShowHelpDlg(${1:[cExp01]}, ${2:[xExp02]}, ${3:[xExp03]}, ${4:[xExp04]}, ${5:[xExp05]})"
+        ],
+        "description": "ShowHelpDlg"
+    },
+    "ShowInfMem": {
+        "prefix": "ShowInfMem",
+        "body": [
+            "ShowInfMem(${1:[cExp01]}, ${2:[xExp02]})"
+        ],
+        "description": "ShowInfMem"
+    },
+    "Sin": {
+        "prefix": "Sin",
+        "body": [
+            "Sin(${1:nExp01})"
+        ],
+        "description": "Sin"
+    },
+    "sleep": {
+        "prefix": "sleep",
+        "body": [
+            "sleep(${1:nExp01})"
+        ],
+        "description": "sleep"
+    },
+    "SMIMESign": {
+        "prefix": "SMIMESign",
+        "body": [
+            "SMIMESign(${1:cExp01}, ${2:cExp02}, ${3:cExp03}, ${4:cExp04}, ${5:cExp05}, ;",
+            "${6:[cExp06]})"
+        ],
+        "description": "SMIMESign"
+    },
+    "SndToPrnWin": {
+        "prefix": "SndToPrnWin",
+        "body": [
+            "SndToPrnWin(${1:cExp01}, ${2:lExp02}, ${3:lExp03}, ${4:nExp04}, ${5:nExp05})"
+        ],
+        "description": "SndToPrnWin"
+    },
+    "socketconn": {
+        "prefix": "socketconn",
+        "body": [
+            "socketconn(${1:cExp01}, ${2:nExp02}, ${3:cExp03}, ${4:nExp04})"
+        ],
+        "description": "socketconn"
+    },
+    "spac": {
+        "prefix": "spac",
+        "body": [
+            "spac(${1:[nExp01]})"
+        ],
+        "description": "spac"
+    },
+    "space": {
+        "prefix": "space",
+        "body": [
+            "space(${1:[nExp01]})"
+        ],
+        "description": "space"
+    },
+    "SplitPath": {
+        "prefix": "SplitPath",
+        "body": [
+            "SplitPath(${1:cExp01}, ${2:[cExp02]}, ${3:[cExp03]}, ${4:[cExp04]}, ${5:[cExp05]}, ;",
+            "${6:[lExp06]})"
+        ],
+        "description": "SplitPath"
+    },
+    "sqrt": {
+        "prefix": "sqrt",
+        "body": [
+            "sqrt(${1:nExp01})"
+        ],
+        "description": "sqrt"
+    },
+    "SrvDisplay": {
+        "prefix": "SrvDisplay",
+        "body": [
+            "SrvDisplay()"
+        ],
+        "description": "SrvDisplay"
+    },
+    "StartJob": {
+        "prefix": "StartJob",
+        "body": [
+            "StartJob(${1:cExp01}, ${2:cExp02}, ${3:lExp03}, ${4:[xExp04]}, ${5:[xExp05]}, ;",
+            "${6:[xExp06]}, ${7:[xExp07]}, ${8:[xExp08]}, ${9:[xExp09]}, ${10:[xExp10]}, ;",
+            "${11:[xExp11]}, ${12:[xExp12]}, ${13:[xExp13]}, ${14:[xExp14]}, ${15:[xExp15]}, ;",
+            "${16:[xExp16]}, ${17:[xExp17]}, ${18:[xExp18]}, ${19:[xExp19]}, ${20:[xExp20]}, ;",
+            "${21:[xExp21]}, ${22:[xExp22]}, ${23:[xExp23]}, ${24:[xExp24]}, ${25:[xExp25]}, ;",
+            "${26:[xExp26]}, ${27:[xExp27]}, ${28:[xExp28]})"
+        ],
+        "description": "StartJob"
+    },
+    "str": {
+        "prefix": "str",
+        "body": [
+            "str()"
+        ],
+        "description": "str"
+    },
+    "StrIConv": {
+        "prefix": "StrIConv",
+        "body": [
+            "StrIConv(${1:cExp01}, ${2:cExp02}, ${3:cExp03})"
+        ],
+        "description": "StrIConv"
+    },
+    "strtokarr": {
+        "prefix": "strtokarr",
+        "body": [
+            "strtokarr(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "strtokarr"
+    },
+    "strtokarr2": {
+        "prefix": "strtokarr2",
+        "body": [
+            "strtokarr2(${1:cExp01}, ${2:cExp02}, ${3:[lExp03]})"
+        ],
+        "description": "strtokarr2"
+    },
+    "strtran": {
+        "prefix": "strtran",
+        "body": [
+            "strtran(${1:cExp01}, ${2:cExp02}, ${3:[cExp03]}, ${4:[nExp04]}, ${5:[nExp05]})"
+        ],
+        "description": "strtran"
+    },
+    "stuff": {
+        "prefix": "stuff",
+        "body": [
+            "stuff(${1:cExp01}, ${2:nExp02}, ${3:nExp03}, ${4:cExp04})"
+        ],
+        "description": "stuff"
+    },
+    "StuffBit": {
+        "prefix": "StuffBit",
+        "body": [
+            "StuffBit(${1:cExp01}, ${2:nExp02}, ${3:nExp03}, ${4:nExp04})"
+        ],
+        "description": "StuffBit"
+    },
+    "SysErrorBlock": {
+        "prefix": "SysErrorBlock",
+        "body": [
+            "SysErrorBlock(${1:[bExp01]})"
+        ],
+        "description": "SysErrorBlock"
+    },
+    "Tan": {
+        "prefix": "Tan",
+        "body": [
+            "Tan(${1:nExp01})"
+        ],
+        "description": "Tan"
+    },
+    "TarCompress": {
+        "prefix": "TarCompress",
+        "body": [
+            "TarCompress(${1:aExp01}, ${2:cExp02}, ${3:[lExp03]})"
+        ],
+        "description": "TarCompress"
+    },
+    "tardecomp": {
+        "prefix": "tardecomp",
+        "body": [
+            "tardecomp(${1:cExp01}, ${2:cExp02}, ${3:[nExp03]}, ${4:[lExp04]})"
+        ],
+        "description": "tardecomp"
+    },
+    "TCAlter": {
+        "prefix": "TCAlter",
+        "body": [
+            "TCAlter(${1:cExp01}, ${2:aExp02}, ${3:aExp03}, ${4:[nExp04]})"
+        ],
+        "description": "TCAlter"
+    },
+    "TCApiBuild": {
+        "prefix": "TCApiBuild",
+        "body": [
+            "TCApiBuild()"
+        ],
+        "description": "TCApiBuild"
+    },
+    "TCCanOpen": {
+        "prefix": "TCCanOpen",
+        "body": [
+            "TCCanOpen(${1:cExp01}, ${2:[cExp02]})"
+        ],
+        "description": "TCCanOpen"
+    },
+    "TCCommit": {
+        "prefix": "TCCommit",
+        "body": [
+            "TCCommit(${1:nExp01}, ${2:[xExp02]})"
+        ],
+        "description": "TCCommit"
+    },
+    "TCConType": {
+        "prefix": "TCConType",
+        "body": [
+            "TCConType(${1:cExp01})"
+        ],
+        "description": "TCConType"
+    },
+    "TCDelFile": {
+        "prefix": "TCDelFile",
+        "body": [
+            "TCDelFile(${1:cExp01}, ${2:[lExp02]})"
+        ],
+        "description": "TCDelFile"
+    },
+    "TCDelIndex": {
+        "prefix": "TCDelIndex",
+        "body": [
+            "TCDelIndex(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "TCDelIndex"
+    },
+    "TCGenQry": {
+        "prefix": "TCGenQry",
+        "body": [
+            "TCGenQry(${1:[xExp01]}, ${2:[xExp02]}, ${3:cExp03})"
+        ],
+        "description": "TCGenQry"
+    },
+    "TCGetBuild": {
+        "prefix": "TCGetBuild",
+        "body": [
+            "TCGetBuild()"
+        ],
+        "description": "TCGetBuild"
+    },
+    "TCGetConn": {
+        "prefix": "TCGetConn",
+        "body": [
+            "TCGetConn()"
+        ],
+        "description": "TCGetConn"
+    },
+    "TCGetDB": {
+        "prefix": "TCGetDB",
+        "body": [
+            "TCGetDB()"
+        ],
+        "description": "TCGetDB"
+    },
+    "TCGetDBSID": {
+        "prefix": "TCGetDBSID",
+        "body": [
+            "TCGetDBSID()"
+        ],
+        "description": "TCGetDBSID"
+    },
+    "TCGetSID": {
+        "prefix": "TCGetSID",
+        "body": [
+            "TCGetSID()"
+        ],
+        "description": "TCGetSID"
+    },
+    "TCIsConnected": {
+        "prefix": "TCIsConnected",
+        "body": [
+            "TCIsConnected(${1:[nExp01]})"
+        ],
+        "description": "TCIsConnected"
+    },
+    "TCIsView": {
+        "prefix": "TCIsView",
+        "body": [
+            "TCIsView(${1:cExp01})"
+        ],
+        "description": "TCIsView"
+    },
+    "TCIsvLock": {
+        "prefix": "TCIsvLock",
+        "body": [
+            "TCIsvLock()"
+        ],
+        "description": "TCIsvLock"
+    },
+    "TCLink": {
+        "prefix": "TCLink",
+        "body": [
+            "TCLink(${1:[cExp01]}, ${2:[cExp02]}, ${3:[nExp03]})"
+        ],
+        "description": "TCLink"
+    },
+    "TCMaxMap": {
+        "prefix": "TCMaxMap",
+        "body": [
+            "TCMaxMap(${1:nExp01})"
+        ],
+        "description": "TCMaxMap"
+    },
+    "TCQuit": {
+        "prefix": "TCQuit",
+        "body": [
+            "TCQuit()"
+        ],
+        "description": "TCQuit"
+    },
+    "TCRefresh": {
+        "prefix": "TCRefresh",
+        "body": [
+            "TCRefresh(${1:cExp01})"
+        ],
+        "description": "TCRefresh"
+    },
+    "TCSetConn": {
+        "prefix": "TCSetConn",
+        "body": [
+            "TCSetConn(${1:nExp01})"
+        ],
+        "description": "TCSetConn"
+    },
+    "TCSetDummy": {
+        "prefix": "TCSetDummy",
+        "body": [
+            "TCSetDummy(${1:lExp01})"
+        ],
+        "description": "TCSetDummy"
+    },
+    "TCSetField": {
+        "prefix": "TCSetField",
+        "body": [
+            "TCSetField(${1:cExp01}, ${2:cExp02}, ${3:cExp03}, ${4:[nExp04]}, ${5:[nExp05]})"
+        ],
+        "description": "TCSetField"
+    },
+    "TCSetParam": {
+        "prefix": "TCSetParam",
+        "body": [
+            "TCSetParam(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "TCSetParam"
+    },
+    "TCSetVIdx": {
+        "prefix": "TCSetVIdx",
+        "body": [
+            "TCSetVIdx(${1:lExp01})"
+        ],
+        "description": "TCSetVIdx"
+    },
+    "TCSpExec": {
+        "prefix": "TCSpExec",
+        "body": [
+            "TCSpExec(${1:cExp01}, ${2:[xExp02]}, ${3:[xExp03]}, ${4:[xExp04]}, ${5:[xExp05]}, ;",
+            "${6:[xExp06]}, ${7:[xExp07]}, ${8:[xExp08]}, ${9:[xExp09]}, ${10:[xExp10]}, ;",
+            "${11:[xExp11]}, ${12:[xExp12]}, ${13:[xExp13]}, ${14:[xExp14]}, ${15:[xExp15]}, ;",
+            "${16:[xExp16]}, ${17:[xExp17]}, ${18:[xExp18]}, ${19:[xExp19]}, ${20:[xExp20]}, ;",
+            "${21:[xExp21]}, ${22:[xExp22]}, ${23:[xExp23]}, ${24:[xExp24]}, ${25:[xExp25]}, ;",
+            "${26:[xExp26]}, ${27:[xExp27]}, ${28:[xExp28]}, ${29:[xExp29]}, ${30:[xExp30]}, ;",
+            "${31:[xExp31]}, ${32:[xExp32]}, ${33:[xExp33]}, ${34:[xExp34]}, ${35:[xExp35]}, ;",
+            "${36:[xExp36]}, ${37:[xExp37]}, ${38:[xExp38]}, ${39:[xExp39]}, ${40:[xExp40]}, ;",
+            "${41:[xExp41]}, ${42:[xExp42]}, ${43:[xExp43]}, ${44:[xExp44]}, ${45:[xExp45]}, ;",
+            "${46:[xExp46]}, ${47:[xExp47]}, ${48:[xExp48]}, ${49:[xExp49]}, ${50:[xExp50]}, ;",
+            "${51:[xExp51]}, ${52:[xExp52]}, ${53:[xExp53]}, ${54:[xExp54]}, ${55:[xExp55]}, ;",
+            "${56:[xExp56]}, ${57:[xExp57]}, ${58:[xExp58]}, ${59:[xExp59]}, ${60:[xExp60]}, ;",
+            "${61:[xExp61]})"
+        ],
+        "description": "TCSpExec"
+    },
+    "TCSpExist": {
+        "prefix": "TCSpExist",
+        "body": [
+            "TCSpExist(${1:cExp01})"
+        ],
+        "description": "TCSpExist"
+    },
+    "TCSqlError": {
+        "prefix": "TCSqlError",
+        "body": [
+            "TCSqlError()"
+        ],
+        "description": "TCSqlError"
+    },
+    "TCSqlExec": {
+        "prefix": "TCSqlExec",
+        "body": [
+            "TCSqlExec(${1:cExp01}, ${2:[nExp02]})"
+        ],
+        "description": "TCSqlExec"
+    },
+    "TCSQLReplay": {
+        "prefix": "TCSQLReplay",
+        "body": [
+            "TCSQLReplay(${1:nExp01}, ${2:cExp02})"
+        ],
+        "description": "TCSQLReplay"
+    },
+    "TCSrvMap": {
+        "prefix": "TCSrvMap",
+        "body": [
+            "TCSrvMap(${1:cExp01}, ${2:[cExp02]}, ${3:[lExp03]})"
+        ],
+        "description": "TCSrvMap"
+    },
+    "TCSrvType": {
+        "prefix": "TCSrvType",
+        "body": [
+            "TCSrvType()"
+        ],
+        "description": "TCSrvType"
+    },
+    "TCUnique": {
+        "prefix": "TCUnique",
+        "body": [
+            "TCUnique(${1:cExp01}, ${2:[cExp02]})"
+        ],
+        "description": "TCUnique"
+    },
+    "TCUnLink": {
+        "prefix": "TCUnLink",
+        "body": [
+            "TCUnLink(${1:[nExp01]}, ${2:[lExp02]})"
+        ],
+        "description": "TCUnLink"
+    },
+    "TCView2DB": {
+        "prefix": "TCView2DB",
+        "body": [
+            "TCView2DB(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "TCView2DB"
+    },
+    "TCViewMulti": {
+        "prefix": "TCViewMulti",
+        "body": [
+            "TCViewMulti(${1:cExp01}, ${2:cExp02}, ${3:cExp03})"
+        ],
+        "description": "TCViewMulti"
+    },
+    "TCViewOne": {
+        "prefix": "TCViewOne",
+        "body": [
+            "TCViewOne(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "TCViewOne"
+    },
+    "TCViewRen": {
+        "prefix": "TCViewRen",
+        "body": [
+            "TCViewRen(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "TCViewRen"
+    },
+    "TCViewStruct": {
+        "prefix": "TCViewStruct",
+        "body": [
+            "TCViewStruct(${1:cExp01}, ${2:cExp02}, ${3:cExp03})"
+        ],
+        "description": "TCViewStruct"
+    },
+    "TCvLock": {
+        "prefix": "TCvLock",
+        "body": [
+            "TCvLock(${1:cExp01})"
+        ],
+        "description": "TCvLock"
+    },
+    "TCvUnLock": {
+        "prefix": "TCvUnLock",
+        "body": [
+            "TCvUnLock(${1:[cExp01]})"
+        ],
+        "description": "TCvUnLock"
+    },
+    "ThreadCount": {
+        "prefix": "ThreadCount",
+        "body": [
+            "ThreadCount()"
+        ],
+        "description": "ThreadCount"
+    },
+    "ThreadId": {
+        "prefix": "ThreadId",
+        "body": [
+            "ThreadId()"
+        ],
+        "description": "ThreadId"
+    },
+    "time": {
+        "prefix": "time",
+        "body": [
+            "time(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "time"
+    },
+    "TimeGlbValue": {
+        "prefix": "TimeGlbValue",
+        "body": [
+            "TimeGlbValue(${1:cExp01})"
+        ],
+        "description": "TimeGlbValue"
+    },
+    "Tone": {
+        "prefix": "Tone",
+        "body": [
+            "Tone(${1:[nExp01]}, ${2:[nExp02]})"
+        ],
+        "description": "Tone"
+    },
+    "tran": {
+        "prefix": "tran",
+        "body": [
+            "tran(${1:[nExp01]})"
+        ],
+        "description": "tran"
+    },
+    "trans": {
+        "prefix": "trans",
+        "body": [
+            "trans(${1:[nExp01]})"
+        ],
+        "description": "trans"
+    },
+    "transf": {
+        "prefix": "transf",
+        "body": [
+            "transf(${1:xExp01}, ${2:cExp02})"
+        ],
+        "description": "transf"
+    },
+    "transfo": {
+        "prefix": "transfo",
+        "body": [
+            "transfo(${1:xExp01}, ${2:cExp02})"
+        ],
+        "description": "transfo"
+    },
+    "transfor": {
+        "prefix": "transfor",
+        "body": [
+            "transfor(${1:xExp01}, ${2:cExp02})"
+        ],
+        "description": "transfor"
+    },
+    "transform": {
+        "prefix": "transform",
+        "body": [
+            "transform(${1:xExp01}, ${2:cExp02})"
+        ],
+        "description": "transform"
+    },
+    "unCompress": {
+        "prefix": "unCompress",
+        "body": [
+            "unCompress(${1:cExp01}, ${2:nExp02}, ${3:cExp03}, ${4:nExp04})"
+        ],
+        "description": "unCompress"
+    },
+    "UnStuff": {
+        "prefix": "UnStuff",
+        "body": [
+            "UnStuff(${1:cExp01}, ${2:nExp02}, ${3:nExp03}, ${4:nExp04})"
+        ],
+        "description": "UnStuff"
+    },
+    "used": {
+        "prefix": "used",
+        "body": [
+            "used()"
+        ],
+        "description": "used"
+    },
+    "UserException": {
+        "prefix": "UserException",
+        "body": [
+            "UserException(${1:cExp01})"
+        ],
+        "description": "UserException"
+    },
+    "utcToLocal": {
+        "prefix": "utcToLocal",
+        "body": [
+            "utcToLocal(${1:cExp01}, ${2:cExp02}, ${3:[nExp03]})"
+        ],
+        "description": "utcToLocal"
+    },
+    "valType": {
+        "prefix": "valType",
+        "body": [
+            "valType(${1:xExp01})"
+        ],
+        "description": "valType"
+    },
+    "VarBeginT": {
+        "prefix": "VarBeginT",
+        "body": [
+            "VarBeginT(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "VarBeginT"
+    },
+    "VarClean": {
+        "prefix": "VarClean",
+        "body": [
+            "VarClean(${1:cExp01})"
+        ],
+        "description": "VarClean"
+    },
+    "VarCleanA": {
+        "prefix": "VarCleanA",
+        "body": [
+            "VarCleanA(${1:cExp01})"
+        ],
+        "description": "VarCleanA"
+    },
+    "VarCleanX": {
+        "prefix": "VarCleanX",
+        "body": [
+            "VarCleanX(${1:cExp01})"
+        ],
+        "description": "VarCleanX"
+    },
+    "VarDel": {
+        "prefix": "VarDel",
+        "body": [
+            "VarDel(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "VarDel"
+    },
+    "VarDelA": {
+        "prefix": "VarDelA",
+        "body": [
+            "VarDelA(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "VarDelA"
+    },
+    "VarDelX": {
+        "prefix": "VarDelX",
+        "body": [
+            "VarDelX(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "VarDelX"
+    },
+    "VarEndT": {
+        "prefix": "VarEndT",
+        "body": [
+            "VarEndT(${1:cExp01}, ${2:cExp02})"
+        ],
+        "description": "VarEndT"
+    },
+    "VarGet": {
+        "prefix": "VarGet",
+        "body": [
+            "VarGet(${1:cExp01}, ${2:cExp02}, ${3:xExp03}, ${4:xExp04})"
+        ],
+        "description": "VarGet"
+    },
+    "VarGetA": {
+        "prefix": "VarGetA",
+        "body": [
+            "VarGetA(${1:cExp01}, ${2:cExp02}, ${3:xExp03})"
+        ],
+        "description": "VarGetA"
+    },
+    "VarGetAA": {
+        "prefix": "VarGetAA",
+        "body": [
+            "VarGetAA(${1:cExp01}, ${2:xExp02})"
+        ],
+        "description": "VarGetAA"
+    },
+    "VarGetAD": {
+        "prefix": "VarGetAD",
+        "body": [
+            "VarGetAD(${1:cExp01}, ${2:cExp02}, ${3:xExp03})"
+        ],
+        "description": "VarGetAD"
+    },
+    "VarGetD": {
+        "prefix": "VarGetD",
+        "body": [
+            "VarGetD(${1:cExp01}, ${2:cExp02}, ${3:xExp03}, ${4:xExp04})"
+        ],
+        "description": "VarGetD"
+    },
+    "VarGetX": {
+        "prefix": "VarGetX",
+        "body": [
+            "VarGetX(${1:cExp01}, ${2:cExp02}, ${3:xExp03})"
+        ],
+        "description": "VarGetX"
+    },
+    "VarGetXA": {
+        "prefix": "VarGetXA",
+        "body": [
+            "VarGetXA(${1:cExp01}, ${2:xExp02})"
+        ],
+        "description": "VarGetXA"
+    },
+    "VarGetXD": {
+        "prefix": "VarGetXD",
+        "body": [
+            "VarGetXD(${1:cExp01}, ${2:cExp02}, ${3:xExp03})"
+        ],
+        "description": "Recupera o valor de uma \"chave\" na \"Tabela X\" de uma determinada sessão, sem fazer bloqueio da \"chave\" <cChave> (Dirty)."
+    },
+    "VarGet_A": {
+        "prefix": "VarGet_A",
+        "body": [
+            "VarGet_A(${1:cUID}, ${2:aListCV_X}, ${3:aListCV_A})"
+        ],
+        "description": "Obtém uma lista com todas as chaves e seus respectivos valores das tabelas \"Tabela X\" e \"Tabela A\""
+    },
+    "VarIsUID": {
+        "prefix": "VarIsUID",
+        "body": [
+            "VarIsUID(${1:cUID})"
+        ],
+        "description": "Verifica se o identificador da sessão de variáveis globais fornecido está associado a um HashMap global."
+    },
+    "VarRef": {
+        "prefix": "VarRef",
+        "body": [
+            "VarRef(${1:cVarRefencia}, ${2:cVarRefenciada})"
+        ],
+        "description": "Cria referência entre duas variáveis."
+    },
+    "VarSet": {
+        "prefix": "VarSet",
+        "body": [
+            "VarSet(${1:cUID}, ${2:cChave}, ${3:xValor}, ${4:aValor})"
+        ],
+        "description": "Insere ou Atualiza o valor de uma \"chave\" de forma transacionada/síncrona nas tabelas \"Tabela X\" e na \"Tabela A\" de uma determinada sessão, pois faz bloqueio da \"chave\" <cChave>."
+    },
+    "VarSetA": {
+        "prefix": "VarSetA",
+        "body": [
+            "VarSetA(${1:cUID}, ${2:cChave}, ${3:aValor})"
+        ],
+        "description": "Insere ou Atualiza o valor de uma \"chave\" na \"Tabela A\" de uma determinada sessão, e faz bloqueio da \"chave\" <cChave>."
+    },
+    "VarSetAD": {
+        "prefix": "VarSetAD",
+        "body": [
+            "VarSetAD(${1:cUID}, ${2:cChave}, ${3:xValor})"
+        ],
+        "description": "Insere ou Atualiza o valor de uma \"chave\" na \"Tabela A\" de uma determinada sessão, sem fazer bloqueio da \"chave\" <cChave> (Dirty)."
+    },
+    "VarSetD": {
+        "prefix": "VarSetD",
+        "body": [
+            "VarSetD(${1:cUID}, ${2:cChave}, ${3:xValor}, ${4:aValor})"
+        ],
+        "description": "Insere ou Atualiza o valor de uma \"chave\" tanto na \"Tabela X\" quanto na \"Tabela A\" de uma determinada sessão, mas não faz bloqueio da \"chave\" <cChave> (Dirty)."
+    },
+    "VarSetGet": {
+        "prefix": "VarSetGet",
+        "body": [
+            "VarSetGet(${1:cVariavel}, ${2:bBloco}, ${3:[lApenasUpdate]})"
+        ],
+        "description": "Permite associar um bloco de código a uma variável de programa do Advpl, onde o bloco de código será chamado quando a variável for acessada."
+    },
+    "VarSetUID": {
+        "prefix": "VarSetUID",
+        "body": [
+            "VarSetUID(${1:cUID}, ${2:[lTemUID]})"
+        ],
+        "description": "Cria uma nova sessão nomeada de Variáveis Globais agrupadas em duas tabelas de HashMap, uma de dados primários a \"Tabela X\" e outra para Listas de Valores a \"Tabela A\"."
+    },
+    "VarSetX": {
+        "prefix": "VarSetX",
+        "body": [
+            "VarSetX(${1:cUID}, ${2:cChave}, ${3:xValor})"
+        ],
+        "description": "Insere ou Atualiza o valor de uma \"chave\" na \"Tabela X\" de uma determinada sessão, e faz bloqueio da \"chave\" <cChave>."
+    },
+    "VarSetXD": {
+        "prefix": "VarSetXD",
+        "body": [
+            "VarSetXD(${1:cUID}, ${2:cChave}, ${3:xValor})"
+        ],
+        "description": "Insere ou Atualiza o valor de uma \"chave\" na \"Tabela X\" de uma determinada sessão, sem fazer bloqueio da \"chave\" <cChave> (Dirty)."
+    },
+    "W2Bin": {
+        "prefix": "W2Bin",
+        "body": [
+            "W2Bin(${1:nInt})"
+        ],
+        "description": "Converte um número inteiro em uma string formatada como um inteiro de 16 bits não sinalizado."
+    },
+    "WaitRun": {
+        "prefix": "WaitRun",
+        "body": [
+            "WaitRun(${1:cExeName}, ${2:[nOpc]})"
+        ],
+        "description": "Executa e aguarda pelo término de um programa externo (arquivo executável) através do sistema operacional da estação onde o SmartClient está sendo executado."
+    },
+    "WDClient": {
+        "prefix": "WDClient",
+        "body": [
+            "WDClient(${1:cMethod}, ${2:cLocalFile}, ${3:cURL1}, ${4:cURL2}, ${5:cUserPwd}, ;",
+            "${6:aInfo})"
+        ],
+        "description": "Manipulação de arquivos remotos em sites da internet com utilização do protocolo WebDAV. Podem ser usados tanto sites sem segurança (http://) quanto sites seguros (https://)"
+    },
+    "WebEncript": {
+        "prefix": "WebEncript",
+        "body": [
+            "WebEncript(${1:cContent}, ${2:[lDecript]}, ${3:[lUseinjava]})"
+        ],
+        "description": "Realiza a criptografia ou decriptografa um conteúdo qualquer informado em <cContent>."
+    },
+    "WinExec": {
+        "prefix": "WinExec",
+        "body": [
+            "WinExec(${1:cExec})"
+        ],
+        "description": "Executa uma aplicação externa na estação onde o SmartClient está em execução."
+    },
+    "WritePProString": {
+        "prefix": "WritePProString",
+        "body": [
+            "WritePProString(${1:cSecao}, ${2:cChave}, ${3:cConteudo}, ${4:cArqIni})"
+        ],
+        "description": "Permite criar e/ou alterar um seção/chave de configuração no arquivo de configuração (.INI). No entanto, caso o arquivo não exista ele será criado. Pode-se, opcionalmente, definir um path Absoluto, com unidade de disco, de modo que o arquivo de configuração (.INI) será atualizado na estação onde o TOTVS Smart Client está sendo executado."
+    },
+    "WriteRSAPK": {
+        "prefix": "WriteRSAPK",
+        "body": [
+            "WriteRSAPK(${1:cDERFile}, ${2:cRSAFile}, @${3:cError})"
+        ],
+        "description": "Converte uma chave privada no formato DER (Distinguished Encoding Rules) para o formato PEM (Privacy Enhanced Mail) criptografando com o algoritmo RSA."
+    },
+    "WriteSrvProfString": {
+        "prefix": "WriteSrvProfString",
+        "body": [
+            "WriteSrvProfString(${1:cChave}, ${2:cValor})"
+        ],
+        "description": "Cria ou altera um chave, no arquivo de configuração (*.INI), na seção do ambiente em uso."
+    },
+    "WSClassNew": {
+        "prefix": "WSClassNew",
+        "body": [
+            "WSClassNew(${1:cSrvStruct})"
+        ],
+        "description": "Cria uma nova instância de uma estrutura de Web Services."
+    },
+    "WSDescData": {
+        "prefix": "WSDescData",
+        "body": [
+            "WSDescData(${1:cClassName}, ${2:[lIncluiDoc]})"
+        ],
+        "description": "Obtém todas as propriedades de uma classe de Web Services."
+    },
+    "WSDescMeth": {
+        "prefix": "WSDescMeth",
+        "body": [
+            "WSDescMeth(${1:cClassName})"
+        ],
+        "description": "Obtém todos os métodos (incluindo os parâmetros de send e receive) de uma classe de Web Services."
+    },
+    "WSDL2Parser": {
+        "prefix": "WSDL2Parser",
+        "body": [
+            "WSDL2Parser(${1:cWSDL}, @${2:aLocalType}, @${3:aLocalName}, @${4:aLocalImport}, @${5:cError}, ;",
+            "@${6:cWarning})"
+        ],
+        "description": "Realiza o parser de um conteudo importado de um WSDL."
+    },
+    "WSDLParser": {
+        "prefix": "WSDLParser",
+        "body": [
+            "WSDLParser(${1:cWSDL}, @${2:aLocalType}, @${3:aLocalMsg}, @${4:aLocalPort}, @${5:aLocalBind}, ;",
+            "@${6:aLocalServ}, @${7:aLocalName}, @${8:aLocalImport}, @${9:cError}, @${10:cWarning})"
+        ],
+        "description": "Realiza o parse de um WSDL (Web Services Definition Language)."
+    },
+    "XmlC14N": {
+        "prefix": "XmlC14N",
+        "body": [
+            "XmlC14N(${1:cXML}, ${2:cOption}, @${3:cError}, @${4:cWarning})"
+        ],
+        "description": "Esta função permite aplicar o algoritmo canonicalization C14N na string que contém um XML."
+    },
+    "XmlC14NFile": {
+        "prefix": "XmlC14NFile",
+        "body": [
+            "XmlC14NFile(${1:cFile}, ${2:cOption}, @${3:cError}, @${4:cWarning})"
+        ],
+        "description": "Esta função permite aplicar o algoritmo canonicalization C14N em um arquivo que contém um XML."
+    },
+    "XmlChildCount": {
+        "prefix": "XmlChildCount",
+        "body": [
+            "XmlChildCount(${1:oParent})"
+        ],
+        "description": "Retorna a quantidade de nós existentes, a partir de um elemento(nó) pai informado como parâmetro."
+    },
+    "XmlChildEx": {
+        "prefix": "XmlChildEx",
+        "body": [
+            "XmlChildEx(${1:oParent}, ${2:cProcura})"
+        ],
+        "description": "Retorna um ou mais nós da estrutura, de acordo com o nome do elemento procurado."
+    },
+    "XmlDelNode": {
+        "prefix": "XmlDelNode",
+        "body": [
+            "XmlDelNode(${1:oParent}, ${2:cNode})"
+        ],
+        "description": "Exclui um nó de um objeto XML - eXtensible Markup Language (Linguagem extensível de formatação)."
+    },
+    "XmlFVldSch": {
+        "prefix": "XmlFVldSch",
+        "body": [
+            "XmlFVldSch(${1:cXML}, ${2:cXSD}, ${3:cError}, ${4:cWarning})"
+        ],
+        "description": "Realiza a validação de um arquivo XML utilizando um XSD (XML Schema Definition)."
+    },
+    "XmlGetChild": {
+        "prefix": "XmlGetChild",
+        "body": [
+            "XmlGetChild(${1:oParent}, ${2:nChild})"
+        ],
+        "description": "Retorna um elemento filho da estrutura."
+    },
+    "XmlGetParent": {
+        "prefix": "XmlGetParent",
+        "body": [
+            "XmlGetParent(${1:oNode})"
+        ],
+        "description": "Retorna um nó que representa o nó pai do elemento especificado por parâmetro."
+    },
+    "XmlNewNode": {
+        "prefix": "XmlNewNode",
+        "body": [
+            "XmlNewNode(${1:oParent}, ${2:cElementName}, ${3:cRealName}, ${4:cType})"
+        ],
+        "description": "Cria um novo nó a partir de um ponto qualquer no XML -  EXtensible Markup Language (Linguagem extensível de formatação)."
+    },
+    "XmlNode2Arr": {
+        "prefix": "XmlNode2Arr",
+        "body": [
+            "XmlNode2Arr(${1:oRoot}, ${2:cNode})"
+        ],
+        "description": "Transforma em Array um objeto (nó) da estrutura do XML - eXtensible Markup Language (Linguagem extensível de formatação)."
+    },
+    "XmlParser": {
+        "prefix": "XmlParser",
+        "body": [
+            "XmlParser(${1:cXML}, ${2:cReplace}, @${3:cError}, @${4:cWarning})"
+        ],
+        "description": "Retorna um objeto, que possui uma estrutura XML, passado por parâmetro."
+    },
+    "XmlParserFile": {
+        "prefix": "XmlParserFile",
+        "body": [
+            "XmlParserFile(${1:cFile}, ${2:cReplace}, @${3:cError}, @${4:cWarning})"
+        ],
+        "description": "Esta função permite retornar um objeto, que possui uma estrutura XML, recebido de um arquivo por parâmetro."
+    },
+    "XmlSVldSch": {
+        "prefix": "XmlSVldSch",
+        "body": [
+            "XmlSVldSch(${1:cXML}, ${2:cSchemaPath}, @${3:cError}, @${4:cWarning})"
+        ],
+        "description": "Executa a validação de um XML como string com relação a um arquivo XSD (Schema)."
+    },
+    "Year": {
+        "prefix": "Year",
+        "body": [
+            "Year(${1:dDate})"
+        ],
+        "description": "Year"
+    },
+    "ChangeQuery": {
+        "prefix": "ChangeQuery",
+        "body": [
+            "ChangeQuery(${1:cQuery})"
+        ],
+        "description": "Esta função tem como objetivo retornar uma query modificada de acordo a escrita adequada para o banco de dados em uso."
+    }
+}
