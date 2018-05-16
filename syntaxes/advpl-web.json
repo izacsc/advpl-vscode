@@ -1,0 +1,31 @@
+{
+    "fileTypes": [
+        "aph"
+    ],
+    "patterns": [
+        {
+            "include": "text.html.basic"
+        },
+        {
+            "contentName": "meta.embedded.block.advpl",
+            "begin": "(<%=?)",
+            "beginCaptures": {
+                "1": {
+                    "name": "keyword.control.begin.advpl"
+                }
+            },
+            "end": "(%>)",
+            "endCaptures": {
+                "1": {
+                    "name": "keyword.control.end.advpl"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.advpl"
+                }
+            ]
+        }
+    ],
+    "scopeName": "source.advpl-web"
+}

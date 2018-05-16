@@ -9,7 +9,7 @@
         "vscode": "^1.17.0"
     },
     "categories": [
-        "Languages"
+        "Programming Languages"
     ],
     "activationEvents": [
         "onLanguage:advpl",
@@ -243,11 +243,7 @@
                     ".apl"
                 ],
                 "aliases": [
-                    "Advpl(PRW)",
-                    "Advpl(PRX)",
-                    "Advpl(PRG)",
-                    "Advpl(APH)",
-                    "Advpl(APL)"
+                    "AdvPL"
                 ],
                 "configuration": "./advpl.configuration.json"
             }
@@ -257,6 +253,24 @@
                 "language": "advpl",
                 "scopeName": "source.advpl",
                 "path": "./syntaxes/advpl.tmLanguage.tmLanguage"
+            },
+            {
+                "language": "advpl",
+                "scopeName": "source.advpl-web",
+                "path": "./syntaxes/advpl-web.json",
+                "embeddedLanguages": {
+                    "meta.embedded.block.advpl": "advpl"
+                }
+            },
+            {
+                "injectTo": [
+                    "text.html.basic"
+                ],
+                "scopeName": "inline.advpl",
+                "path": "./syntaxes/advpl-inline.json",
+                "embeddedLanguages": {
+                    "meta.embedded.block.advpl": "advpl"
+                }
             }
         ],
         "commands": [

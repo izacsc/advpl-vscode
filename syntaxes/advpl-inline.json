@@ -1,0 +1,29 @@
+{
+    "fileTypes": [
+        "aph"
+    ],
+    "injectionSelector": "L:text",
+    "patterns": [
+        {
+            "contentName": "meta.embedded.block.advpl",
+            "begin": "(<%=?)",
+            "beginCaptures": {
+                "1": {
+                    "name": "keyword.control.begin.advpl"
+                }
+            },
+            "end": "(%>)",
+            "endCaptures": {
+                "1": {
+                    "name": "keyword.control.end.advpl"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.advpl"
+                }
+            ]
+        }
+    ],
+    "scopeName": "inline.advpl"
+}
